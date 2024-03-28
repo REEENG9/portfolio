@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* CSS Reset */
+:root{
+	--color-main: #1c1c1c;
+	--color-gray: #e4e8ec;
+	--color-green: #c8dd76;
+}
+
+* {margin: 0; padding: 0; box-sizing: border-box; font-family: "Noto Sans KR"; color: var(--color-main);} 
+li {list-style: none;}
+a {text-decoration: none; color: inherit;}
+em, i, address {font-style: normal;}
+button {border: none; background: none; cursor: pointer;}
+p {word-break: keep-all;}
+.white{text-shadow: 0 0 5px #333; color: #fff;}
+.eng{font-family: "Lexend Deca", san-serif;}
+.clearfix::after {content: ''; display: block; clear: both;}
+
+@keyframes blink {
+	0%{opacity: 1;}
+	100%{opacity: 0;}
+}
+	
+
+/* --------------------- 헤더 ----------------------- */
+#header{position: fixed; z-index: 2; width: 100%;}
+#header .sub_bg{position: absolute; top: 95px; width: 100%; height: 0px; border: 1px solid rgba(0,0,0,0); background: #fff; transition: all 0.5s;}
+#header #header_bg{position: relative; width: 100%; height: 100px; box-shadow: 0 0 0 rgba(0,0,0,0); background: #fff; transition: all 0.3s;}
+#header #header_wrap{position: relative; width: 1300px; height: 100px; margin: 0 auto;}
+#header #header_wrap h1{position: absolute; left: 50%; margin-left: -120px;}
+#header #header_wrap h1 a{display: flex; justify-content: center; align-items: center;  width: 200px; height: 100px; text-align: center;}
+#header #header_wrap h1 a img{width: 60px; height: 80px;}
+
+#header #header_wrap .gnb{float: left; width: calc(100% - 180px); height: 100%;}
+#header #header_wrap .gnb>ul{height: 100%;}
+#header #header_wrap .gnb>ul>li{position: relative; display: flex; align-items: center; height: 100%; margin: 0 20px;}
+#header #header_wrap .gnb>ul>li::before{content: ''; display: block; position: absolute; bottom: 35px; width: 0; height: 10px; background: var(--color-gray); transition: width 0.5s;}
+#header #header_wrap .gnb>ul>li:nth-of-type(1){float: left; margin: 0 20px 0 0;}
+#header #header_wrap .gnb>ul>li:nth-of-type(2){float: left;}
+#header #header_wrap .gnb>ul>li:nth-of-type(3){float: left;}
+#header #header_wrap .gnb>ul>li:nth-of-type(4){float: right;}
+#header #header_wrap .gnb>ul>li:nth-of-type(5){float: right;}
+#header #header_wrap .gnb>ul>li>a{font-family: "Lexend Deca"; font-size: 22px; font-weight: 500; transition: all 0.5s;}
+#header #header_wrap .gnb>ul>li>ul{position: absolute; left: 0; top: 80px; z-index: 1; width: 120%; height: 0; padding-top: 20px; overflow: hidden; transition: all 0.5s;}
+#header #header_wrap .gnb>ul>li:nth-of-type(2)>ul{width: 170%;}
+#header #header_wrap .gnb>ul>li>ul>li{padding: 10px 0;}
+#header #header_wrap .gnb>ul>li>ul>li>a{display: inline-block; font-weight: 500; transition: 0.3s;}
+#header #header_wrap .gnb>ul>li>ul>li>a::before{content: ''; display: block; position: relative; left: 0; top: 30px; width: 0; height: 2px; background: var(--color-main); transition: 0.3s;}
+
+/* 헤더 hover 이벤트 */
+#header:hover #header_bg{box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
+#header:hover .sub_bg{height: 280px; border-bottom: 1px solid #ccc;}
+#header:hover #header_wrap .gnb>ul>li>ul{top: 100px; height: 280px;}
+#header #header_wrap .gnb>ul>li:hover::before{width: 100%;}
+#header #header_wrap .gnb>ul>li:hover>a{opacity: 0.5;}
+#header #header_wrap .gnb>ul>li>ul>li:hover>a{opacity: 0.5;}
+#header #header_wrap .gnb>ul>li>ul>li:hover>a::before{width: 100%; opacity: 0.5;}
+
+/* 우측 sns 버튼 */
+#header #header_wrap .sns{float: right; width: 160px; height: 100%;}
+#header #header_wrap .sns ul{display: flex; justify-content: flex-end; align-items: center; height: 100%;}
+#header #header_wrap .sns ul li{width: 30px;}
+#header #header_wrap .sns ul li a{display: block; padding: 0 5px;}
+#header #header_wrap .sns ul li:nth-of-type(1) a img{width: 18px; height: 18px;}
+#header #header_wrap .sns ul li:nth-of-type(2) a img{width: 18px; height: 18px;}
+#header #header_wrap .sns ul li:nth-of-type(3) a img{width: 30px; height: 20px;}
+#header #header_wrap .sns ul li:nth-of-type(4) a img{width: 30px; height: 26px;}
+#header #header_wrap .sns ul li:nth-of-type(5) a img{width: 22px; height: 22px;}
+

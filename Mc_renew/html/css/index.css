@@ -1,0 +1,133 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* -------------------- 슬라이드 배너 영역 -------------------- */
+#slide_banner{position: relative; z-index: 1; height: 530px;}
+#slide_banner .swiper-container{height: 100%;}
+#slide_banner .swiper-container .swiper-slide{}
+#slide_banner .swiper-container .swiper-slide p{text-indent: -9999px;}
+#slide_banner .swiper-container .swiper-slide.slide1{background: url("../img/banner1.jpg") center center no-repeat;}
+#slide_banner .swiper-container .swiper-slide.slide2{background: url("../img/banner2.jpg") center center no-repeat;}
+#slide_banner button{width: 90px; height: 90px;}
+#slide_banner button.swiper-button-prev{background: url("../img/btn_left.png") no-repeat; background-size: 90px 90px; left: 50%; margin-left: -650px;}
+#slide_banner button.swiper-button-next{background: url("../img/btn_right.png") no-repeat; background-size: 90px 90px; right: 50%; margin-right: -650px;}
+#slide_banner .swiper-pagination{left: 50%; bottom: 40px; margin-left: -500px; border-radius: 100px; background: rgba(0,0,0,0.3);}
+#slide_banner .swiper-pagination-bullet{width: 15px; height: 15px; margin: 10px; opacity: 1; background: #ccc;}
+#slide_banner .swiper-pagination-bullet-active{background: var(--color-yellow);}
+
+/* -------------------- 메인 영역 시작 (공통 속성) -------------------- */
+#main{}
+#main section{padding: 40px 0;}
+#main .wrap{width: 1250px; margin: 0 auto;}
+
+/* 섹션 제목 공통 속성 */
+#main h2{padding: 30px 0 60px 0; font-family: "main_font"; font-size: 32px; text-align: center;}
+
+/* 화살표 버튼 공통 속성 */
+#main .arrow_btn{position: absolute; top: 50%; left: 0; width: 100%; margin-top: -20px;}
+#main .arrow_btn button{position: absolute;}
+#main .arrow_btn button img{}
+#main .arrow_btn button.left_arrow{left: 50%; margin-left: -625px;}
+#main .arrow_btn button.right_arrow{right: 50%; margin-right: -625px;}
+
+/* 더보기 버튼 공통 속성 */
+#main .more_btn{float: right; width: 123px; height: 36px; margin-right:33px; border-radius: 36px; font-size: 20px; font-weight: bold; color: #fff;}
+
+/* -------------------- 섹션 1 (ORDER) 영역 -------------------- */
+#main .order{}
+#main .order h2{}
+#main .order ul.order_menu{display: flex; justify-content: space-between; width: 1179px; margin: 0 auto;}
+#main .order ul.order_menu li{}
+#main .order ul.order_menu li a {}
+#main .order ul.order_menu li a img{}
+
+
+/* -------------------- 섹션 2 (EVENT) 영역 -------------------- */
+#main .event{background: rgba(255,188,13,0.3);}
+#main .event .wrap{position: relative;}
+#main .event h2{}
+#main .event .event_slide{width: 1179px; margin: 0 auto; overflow: hidden;}
+#main .event .event_slide ul.event_menu{width: 2358px;  height: 470px; margin: 0 auto;}
+#main .event .event_slide ul.event_menu li{float: left; width: 347px; margin: 0 23px; border: 2px solid var(--color-yellow); border-radius: 10px; text-align: center; background: #fff; overflow: hidden; transition: all 0.2s;}
+#main .event .event_slide ul.event_menu li:hover{border-top: 10px solid var(--color-yellow);}
+#main .event .event_slide ul.event_menu li a{display: inline-block; width: 100%; height: 100%;  padding: 10px 0 50px 0; line-height: 30px;}
+#main .event .event_slide ul.event_menu li a:hover{text-decoration: underline rgba(255,188,13,0.5) 3px; text-decoration-thickness: 5px;}
+#main .event .event_slide ul.event_menu li a img{width: 328px;}
+#main .event .event_slide ul.event_menu li a p{padding-top: 30px; font-size: 25px; letter-spacing: -1px;}
+#main .event .arrow_btn{}
+#main .event .arrow_btn button{}
+#main .event .arrow_btn button img{}
+#main .event .arrow_btn button.left_arrow{}
+#main .event .arrow_btn button.right_arrow{}
+#main .event .more_btn {background: var(--color-yellow);}
+
+/* -------------------- 섹션 3 (BEST) 영역 -------------------- */
+
+#main .best{background: rgba(219,0,7,0.3);}
+#main .best .wrap{position: relative;}
+#main .best h2{}
+#main .best .best_slide{width: 1180px; margin: 0 auto; overflow: hidden;}
+#main .best .best_slide ul.best_menu{width: 1770px; height: 450px; text-align: center;}
+#main .best .best_slide ul.best_menu li{float: left; width: 285px; margin: 0 5px; border: 2px solid var(--color-red); border-radius: 10px; background: #fff; overflow: hidden; transition: all 0.2s;}
+#main .best .best_slide ul.best_menu li:hover{border-top: 10px solid var(--color-red);}
+#main .best .best_slide ul.best_menu li a{display: inline-block;}
+#main .best .best_slide ul.best_menu li a:hover{text-decoration: underline rgba(219,0,7,0.3) 3px; text-decoration-thickness: 5px;}
+#main .best .best_slide ul.best_menu li a img{}
+#main .best .best_slide ul.best_menu li a strong{display: inline-block; padding-bottom: 25px; font-size: 25px; letter-spacing: -1px;}
+#main .best .best_slide ul.best_menu li a p{width: 90%; margin: 0 auto; padding-bottom: 30px; font-size: 15px; line-height: 20px; letter-spacing: -1px;}
+#main .best .arrow_btn{}
+#main .best .arrow_btn button{}
+#main .best .arrow_btn button img{}
+#main .best .arrow_btn button.left_arrow{}
+#main .best .arrow_btn button.right_arrow{}
+#main .best .more_btn {background: var(--color-red);}
+
+/* -------------------- 섹션 4 (SNS) 영역 -------------------- */
+
+#main .sns{background: rgba(48,174,75,0.3);}
+#main .sns .wrap{}
+#main .sns h2{}
+#main .sns .insta{float: left; width: 625px; padding: 10px;}
+#main .sns .insta a.sns_btn{display: block; width: 250px; margin: 0 auto; padding: 10px; border-radius: 50px; text-align: center; font-family: "main_font"; font-size: 25px; color: #fff; background: var(--color-green);}
+#main .sns .insta ul{display: flex; flex-wrap: wrap; justify-content: space-around; width: 450px; margin: 10px auto;}
+#main .sns .insta ul li{width: 200px; height: 200px; margin: 10px; border: 4px solid #fff; border-radius: 10px; transition: all 0.2s;}
+#main .sns .insta ul li:nth-of-type(1){background: url("../img/sns_img1.png") center center no-repeat; background-size: cover;}
+#main .sns .insta ul li:nth-of-type(2){background: url("../img/sns_img2.png") center center no-repeat; background-size: cover;}
+#main .sns .insta ul li:nth-of-type(3){background: url("../img/sns_img3.png") center center no-repeat; background-size: cover;}
+#main .sns .insta ul li:nth-of-type(4){background: url("../img/sns_img4.png") center center no-repeat; background-size: cover;}
+#main .sns .insta ul li:hover{transform: scale(1.1);}
+#main .sns .insta ul li a{display: block; width: 100%; height: 100%;}
+
+#main .sns .youtube{position: relative; float: right; width: 625px; padding: 10px;}
+#main .sns .youtube a.sns_btn{display: block; width: 250px; margin: 0 auto; padding: 10px; border-radius: 50px; text-align: center; font-family: "main_font"; font-size: 25px; color: #fff; background: var(--color-green);}
+#main .sns .youtube .swiper-container{margin: 50px 0 70px 0; text-align: center;}
+#main .sns .youtube .swiper-container .swiper-slide{}
+#main .sns .youtube .swiper-container .swiper-slide iframe{border-radius: 15px;}
+#main .sns .youtube .swiper-container .swiper-slide.slide1{}
+#main .sns .youtube .swiper-container .swiper-slide.slide2{}
+#main .sns .youtube .swiper-container .swiper-slide.slide3{}
+#main .sns .youtube .swiper-pagination{position: absolute; left: 50%; bottom: 10px; width: 250px; margin-left: -125px; border-radius: 50px; background: rgba(0,0,0,0.5);}
+#main .sns .youtube .swiper-pagination-bullet{width: 25px; height: 25px; margin: 10px 20px; opacity: 1; background: rgba(0,0,0,0.5);}
+#main .sns .youtube .swiper-pagination-bullet-active{background: var(--color-green);}
+
+/* -------------------- 섹션 5 (bottom) 영역 -------------------- */
+#main .bottom{}
+#main .bottom .wrap{text-align: center;}
+#main .bottom .bottom_banner{display: inline-block; width: 1178px; height: 220px; padding: 40px; text-align: right; background: url("../img/bottom_banner.png") 80% 0 no-repeat; background-size: cover;  color: #fff;}
+#main .bottom .bottom_banner h3{font-size: 40px; font-family: "main_font"; color: #fff;}
+#main .bottom .bottom_banner p{padding: 10px 0 30px 0; font-size: 15px; color: #fff;}
+#main .bottom .bottom_banner a{font-size: 20px; font-family: "sub_font"; color: #fff;}
+#main .bottom .bottom_banner a::after {content: " →";}
+
+
+
+
+
+
+
+
+
+
+
+
+

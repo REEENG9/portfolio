@@ -1,0 +1,361 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>버거 메뉴</title>
+	<!-- CSS 연동식 -->
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/sub1_menu.css">
+	
+	<!-- 스와이퍼 연동식 -->
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<script src="script/jquery-3.3.1.min.js"></script>
+	<script src="script/swiper.min.js"></script>
+	
+	<!-- 메타 데이터 -->
+	<meta name="Keywords" content="더조은아카데미,웹퍼블리셔,프론트엔드,2024 방지민 포트폴리오"> <!-- 검색 키워드 -->
+	<meta name="Description" content="홈페이지 리뉴얼 포트폴리오입니다."> <!-- 페이지상세 설명 -->
+	
+	<!-- 파비콘 -->
+	<link rel="shortcut icon" href="img/naver_logo.png"> 
+	<link rel="apple-touch-icon" href="img/naver_logo.png"> <!-- iOS 지원 -->
+	<meta property="og:image" content="img/naver_search.png"> <!-- 대체이미지 -->
+	
+	<!-- Naver Search Advisor -->
+	<meta name="naver-site-verification" content="77a27954133f40924c803bc69069793ef9b207db" />
+</head>
+
+<body>
+	
+	<!-- 헤더 시작 -->
+	<header id="header">
+		
+		<div class="header_wrap clearfix"> <!-- 헤더 탑 메뉴 -->
+			<h1><a href="index.html"><img src="img/top_logo.png" alt="logo"></a></h1>
+			<ul class="aside">
+				<li>
+					<form>
+						<input type="text" id="text" placeholder="검색어 입력">
+						<input type="image" id="search" src="img/top_icon1.png" alt="검색">
+					</form>
+				</li>
+				<li><button class="eng_btn">ENG</button></li>
+				<li><button class="kor_btn">KOR</button></li>
+			</ul>
+		</div>
+		
+		<div class="gnb_wrap">
+			<span class="sub_bg"></span>
+			<ul class="gnb"> <!-- 헤더 메뉴 (gnb) -->
+				<li>
+					<a href="sub1_menu.html">MENU</a>
+					<ul>
+						<li><a href="sub1_menu.html">버거</a></li>
+						<li><a href="#">맥런치</a></li>
+						<li><a href="#">맥모닝</a></li>
+						<li><a href="#">해피스낵</a></li>
+						<li><a href="#">사이드 &amp; 디저트</a></li>
+						<li><a href="#">맥카페 &amp; 음료</a></li>
+						<li><a href="#">해피밀</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">STORE</a>
+					<ul>
+						<li><a href="#">매장찾기</a></li>
+						<li><a href="#">맥딜리버리</a></li>
+						<li><a href="#">맥드라이브</a></li>
+						<li><a href="#">M오더 이용안내</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">WHAT'S NEW</a>
+					<ul>
+						<li><a href="#">프로모션</a></li>
+						<li><a href="#">새로운 소식</a></li>
+						<li><a href="#">이달의 해피밀</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="sub2_brand.html">STORY</a>
+					<ul>
+						<li><a href="sub2_brand.html">브랜드 소개</a></li>
+						<li><a href="#">맥도날드 역사</a></li>
+						<li><a href="#">사회적 책임과 지원</a></li>
+						<li><a href="#">맥도날드 경쟁력</a></li>
+						<li><a href="#">맥도날드 사람들</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">임차 및 채용 안내</a>
+					<ul>
+						<li><a href="#">임차문의</a></li>
+						<li><a href="#">인재채용</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<!-- 헤더 끝 -->
+	
+	<!-- 로컬 내비게이션 바 -->
+	<div id="lnb">
+		<h1>버거</h1>
+		<p>
+			빅맥®에서 맥스파이시® 상하이버거까지,<br>
+			주문 즉시 바로 조리해 더욱 맛있는, 맥도날드의 다양한 버거를 소개합니다. 
+		</p>
+		<ul>
+			<li><a href="sub1_menu.html">버거</a></li>
+			<li><a href="#">맥런치</a></li>
+			<li><a href="#">맥모닝</a></li>
+			<li><a href="#">해피스낵</a></li>
+			<li><a href="#">사이드&amp;디저트</a></li>
+			<li><a href="#">맥커피&amp;음료</a></li>
+			<li><a href="#">해피밀</a></li>
+		</ul>
+	</div>
+	<!-- 로컬 내비게이션 바 끝-->
+	
+	<!-- 메인 영역 -->
+	<main id="menu">
+		<div class="wrap"> <!-- main inner wrap (1250px) -->
+			
+			<div class="menu_btn"> <!-- 메뉴 종류 변경 버튼 -->
+				<button class="single_menu">단품메뉴</button>
+				<button class="set_menu">세트메뉴</button>
+			</div>
+			
+			<!-- 리스트 + 메뉴 상세 wrap -->
+			<div class="menu_contents">
+				<div class="list_wrap clearfix"> <!-- 메뉴 슬라이드 리스트 wrap (버튼 포함) -->
+					<div class="menu_slide"> <!-- 메뉴 슬라이드 리스트 (li overflow hidden 용도, 버튼 미포함)-->
+						<ul>
+							<li>
+								<a href="javascript:;">
+									<div class="img_frame menu1"></div>
+									<strong>행운버거 골드</strong>
+									<p>Prosperity Burger Gold</p>
+									<span>6,300 &#8361;</span>
+								</a> 
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="img_frame menu2"></div>
+									<strong>행운버거 골드 스페셜</strong>
+									<p>Prosperity Burger Gold Special</p>
+									<span>7,000 &#8361;</span>
+								</a> 
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="img_frame menu3"></div>
+									<strong>빅맥®</strong>
+									<p>Big Mac®</p>
+									<span>6,300 &#8361;</span>
+								</a> 
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="img_frame menu4"></div>
+									<strong>더블 쿼터파운더® 치즈</strong>
+									<p>Double Quarter Pounder® with Cheese</p>
+									<span>8,200 &#8361;</span>
+								</a> 
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="img_frame menu3"></div>
+									<strong>빅맥®</strong>
+									<p>Big Mac®</p>
+									<span>6,300 &#8361;</span>
+								</a> 
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="img_frame menu4"></div>
+									<strong>더블 쿼터파운더® 치즈</strong>
+									<p>Double Quarter Pounder® with Cheese</p>
+									<span>8,200 &#8361;</span>
+								</a> 
+							</li>
+						</ul>
+					</div> <!-- menu_slide 끝 -->
+
+					<div class="arrow_btn"> <!-- 리스트 버튼 -->
+						<button class="left_arrow"><img src="img/menu_button_left.png" alt="left_arrow"></button>
+						<button class="right_arrow"><img src="img/menu_button_right.png" alt="right_arrow"></button>
+					</div>
+
+					<button class="more_btn">MORE</button>
+				</div> <!-- list wrap 끝 -->
+				
+				<div class="menu_info"> <!-- 메뉴 상세정보 -->
+					<div class="m_info1">
+						<div class="info_img"><img src="img/menu_img.jpg" alt="행운버거 골드"></div>
+						<div class="info_txt">
+							<strong>행운버거 골드</strong>
+							<span>Prosperity Burger Gold</span>
+							<p>쫀득한 패티에 리치한 갈릭소스의 조화가 환상적인 진한 맛</p>
+							<p>* 판매 시간: 10:30 AM ~ 04:00 AM</p>
+							<p>* 6,300 &#8361;</p>
+						</div>
+					</div>
+					
+					<div class="m_info2">
+						<div class="info_nutri">
+							<h3>영양 정보</h3>
+							<table>
+								<tr>
+									<th scope="col">영양소</th>
+									<th scope="col">함량</th>
+									<th scope="col">영양소기준</th>
+								</tr>
+								<tr>
+									<th scope="row">중량(g)</th>
+									<td>222g</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<th scope="row">중량(ml)</th>
+									<td>-</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<th scope="row">열량</th>
+									<td>529kcal</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<th scope="row">당</th>
+									<td>14g</td>
+									<td>14%</td>
+								</tr>
+								<tr>
+									<th scope="row">단백질</th>
+									<td>24g</td>
+									<td>44%</td>
+								</tr>
+								<tr>
+									<th scope="row">포화지방</th>
+									<td>7g</td>
+									<td>47%</td>
+								</tr>
+								<tr>
+									<th scope="row">나트륨</th>
+									<td>1208mg</td>
+									<td>60%</td>
+								</tr>
+								<tr>
+									<th scope="row">카페인</th>
+									<td>-</td>
+									<td>-</td>
+								</tr>
+							</table>
+						</div>
+						<div class="info_allergy">
+							<h3>알레르기 정보</h3>
+							<p>
+								알레르기 유발 가능 식재료<br>
+								(난류,대두,밀,돼지고기,토마토,굴)
+							</p>
+							<p> * 일부 튀김류 제품은
+									새우 패티와 같은 조리기구를
+									사용하고 있습니다.
+							</p>
+						</div>
+						<div class="info_origin">
+							<h3>원산지 정보</h3>
+							<p>돼지고기:미국산</p>
+						</div>
+					</div>
+				</div> <!-- menu info 끝 -->
+			</div> <!-- menu contents 끝 -->
+				
+		</div> <!-- main inner wrap 끝 -->
+			
+	</main>
+	
+	
+	<!-- 푸터 영역 시작 -->
+	<footer id="footer">
+		<div class="wrap clearfix">
+			<h1><img src="img/footer_mlogo.png" alt="logo"></h1>
+			<div class="fnb">
+				<div class="f_menu">
+					<h3>Menu</h3>
+					<ul>
+						<li><a href="sub1_menu.html">버거</a></li>
+						<li><a href="#">맥런치</a></li>
+						<li><a href="#">맥모닝</a></li>
+						<li><a href="#">해피스낵</a></li>
+						<li><a href="#">사이드 &amp; 디저트</a></li>
+						<li><a href="#">맥카페 &amp; 음료</a></li>
+						<li><a href="#">디저트</a></li>
+					</ul>
+				</div>
+				<div class="f_store">
+					<h3>Store</h3>
+					<ul>
+						<li><a href="#">매장찾기</a></li>
+						<li><a href="#">맥딜리버리</a></li>
+						<li><a href="#">맥드라이브</a></li>
+						<li><a href="#">M오더 이용안내</a></li>
+					</ul>
+				</div>
+				<div class="f_new">
+					<h3>What's New</h3>
+					<ul>
+						<li><a href="#">프로모션</a></li>
+						<li><a href="#">새로운 소식</a></li>
+						<li><a href="#">이달의 해피밀</a></li>
+					</ul>
+				</div>
+					<div class="f_Story">
+					<h3>Story</h3>
+					<ul>
+						<li><a href="sub2_brand.html">브랜드 소개</a></li>
+						<li><a href="#">맥도날드 역사</a></li>
+						<li><a href="#">사회적 책임과 지원</a></li>
+						<li><a href="#">맥도날드 경쟁력</a></li>
+						<li><a href="#">맥도날드 사람들</a></li>
+					</ul>
+				</div>
+				<div class="f_career">
+					<h3>임차 및 채용안내</h3>
+					<ul>
+						<li><a href="#">임차문의</a></li>
+						<li><a href="#">인재채용</a></li>
+					</ul>
+				</div>
+				<div class="f_qna">
+					<h3>고객문의</h3>
+					<ul>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">1:1문의</a></li>
+						<li><a href="#">개인정보 처리방침</a></li>
+						<li><a href="#">위치정보 이용약관</a></li>
+					</ul>
+				</div>
+			</div>
+			<address class="copyright">
+				<p>한국맥도날드(유)</p>
+				<p>대표이사: 김기원</p>
+				<p>사업자등록번호: 101-81-26409</p>
+				<p>전화주문: 1600-5252</p>
+				<p>COPYRIGHT © 2019 ALL RIGHTS RESERVED BY McDonald's.</p>
+			</address>
+			<div class="f_sns">
+				<ul>
+					<li><a href="#"><img src="img/footer_sns1.png" alt="인스타"></a></li>
+					<li><a href="#"><img src="img/footer_sns2.png" alt="유튜브"></a></li>
+					<li><a href="#"><img src="img/footer_sns3.png" alt="페이스"></a></li>
+					<li><a href="#"><img src="img/footer_sns4.png" alt="카카오스토리"></a></li>
+					<li><a href="#"><img src="img/footer_wa_logo.png" alt="웹접근성 인증"></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<!-- 푸터 영역 끝 -->
+</body>
+</html>

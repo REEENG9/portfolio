@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* -------------------- 로컬 내비게이션 영역 -------------------- */
+#lnb{height: 380px; text-align: center; background: url("../img/menu_top_banner.png") 20% center no-repeat; background-size: cover;}
+#lnb h1{position: relative; padding: 50px; font-size: 40px; font-family: "main_font"; color: #fff;}
+#lnb h1::after{content: ""; position: absolute; left: 50%; bottom: 0%; width: 25px; height: 2px; margin-left: -12.5px; background: #fff;}
+#lnb p{padding: 45px 0; color: #fff;}
+#lnb ul{display: flex; width: 1100px; margin: 0 auto; border: 2px solid #fff; border-radius: 300px; overflow: hidden;}
+#lnb ul li{width: 200px;}
+#lnb ul li:not(:last-of-type){border-right: 2px solid #fff;}
+#lnb ul li a{display: inline-block; width: 100%; height: 100%; padding: 20px 10px;font-size: 20px; color: #fff; transition: all 0.1s;}
+#lnb ul li a:hover{background: var(--color-yellow); font-weight: bold; color: var(--color-red);}
+
+/* -------------------- 메인 영역(메뉴 정보) -------------------- */
+#menu{}
+#menu .wrap{width: 1250px; margin: 0 auto;}
+#menu .wrap .menu_btn{display: flex; justify-content: space-around; width: 350px; margin: 0 auto; padding: 50px;}
+#menu .wrap .menu_btn button{font-size: 25px; font-weight: bold;}
+#menu .wrap .menu_btn button:hover{color: var(--color-red); text-decoration: underline; text-underline-position: under;}
+
+#menu .wrap .menu_contents{}
+
+/* -------------------- 메뉴 리스트 -------------------- */
+#menu .wrap .list_wrap{position: relative; width: 1250px;}
+#menu .wrap .list_wrap .menu_slide{width: 1180px; margin: 0 auto; overflow: hidden;}
+#menu .wrap .list_wrap .menu_slide ul{display: flex; width: 1770px; text-align: center;}
+#menu .wrap .list_wrap .menu_slide ul li{float: left; width: 285px; margin: 0 5px; border: 2px solid var(--color-yellow); border-radius: 10px; background: #fff; overflow: hidden;}
+
+#menu .wrap .list_wrap .menu_slide ul li a{display: inline-block; width: 100%; height: 100%; background: #fff; transition: all 0.2s;}
+#menu .wrap .list_wrap .menu_slide ul li a .img_frame{width: 265px; height: 200px; margin: 10px auto; transition: all 0.2s;}
+#menu .wrap .list_wrap .menu_slide ul li a .menu1{background: url("../img/menu1.png") center center no-repeat; background-size: 250px 213.523px;}
+#menu .wrap .list_wrap .menu_slide ul li a .menu2{background: url("../img/menu2.png") center center no-repeat; background-size: 250px 213.523px;}
+#menu .wrap .list_wrap .menu_slide ul li a .menu3{background: url("../img/menu3.png") center center no-repeat; background-size: 250px 213.523px;}
+#menu .wrap .list_wrap .menu_slide ul li a .menu4{background: url("../img/menu4.png") center center no-repeat; background-size: 250px 213.523px;}
+#menu .wrap .list_wrap .menu_slide ul li a strong{font-size: 25px;}
+#menu .wrap .list_wrap .menu_slide ul li a p{padding: 5px 0 30px 0; font-size: 17px;}
+#menu .wrap .list_wrap .menu_slide ul li a span{display: inline-block; padding-bottom: 25px; font-size: 18px; font-weight: bold;}
+
+#menu .wrap .list_wrap .menu_slide ul li a:hover{background: var(--color-yellow);}
+#menu .wrap .list_wrap .menu_slide ul li a:hover strong{color: var(--color-red);}
+#menu .wrap .list_wrap .menu_slide ul li a:hover .menu1{background: url("../img/menu1_select.png") center center no-repeat; background-size: 250px 213.523px;}
+#menu .wrap .list_wrap .menu_slide ul li a:hover .menu2{background: url("../img/menu2_select.png") center center no-repeat; background-size: 250px 213.523px;}
+#menu .wrap .list_wrap .menu_slide ul li a:hover .menu3{background: url("../img/menu3_select.png") center center no-repeat; background-size: 250px 213.523px;}
+#menu .wrap .list_wrap .menu_slide ul li a:hover .menu4{background: url("../img/menu4_select.png") center center no-repeat; background-size: 250px 213.523px;}
+
+#menu .wrap .list_wrap .arrow_btn{position: absolute; top: 40%; left: 0; width: 100%; margin-top: -20px;}
+#menu .wrap .list_wrap .arrow_btn button{position: absolute;}
+#menu .wrap .list_wrap .arrow_btn button img{}
+#menu .wrap .list_wrap .arrow_btn button.left_arrow{left: 50%; margin-left: -625px;}
+#menu .wrap .list_wrap .arrow_btn button.right_arrow{right: 50%; margin-right: -625px;}
+#menu .wrap .list_wrap .more_btn {float: right; width: 123px; height: 36px; margin: 33px 33px 0 0; border-radius: 36px; font-size: 20px; font-weight: bold; color: #fff; background: var(--color-yellow);}
+
+/* -------------------- 메뉴 상세 정보 -------------------- */
+#menu .wrap .menu_info{}
+
+/* 상세정보 1 */
+#menu .wrap .m_info1{display: flex; justify-content: center; align-items: center; padding: 50px 0;}
+#menu .wrap .m_info1 .info_img{}
+#menu .wrap .m_info1 .info_img img{display: block;  margin: 0 auto; border: 30px solid #fff; box-shadow: 0 15px 15px rgba(0,0,0,0.5);}
+#menu .wrap .m_info1 .info_txt{padding: 50px;}
+#menu .wrap .m_info1 .info_txt strong{display: block; font-size: 40px; font-family: "main_font"; color: var(--color-red);}
+#menu .wrap .m_info1 .info_txt span{font-size: 17px; color: var(--color-red);}
+#menu .wrap .m_info1 .info_txt p{font-size: 17px;}
+#menu .wrap .m_info1 .info_txt p:nth-of-type(1){padding: 50px 0; font-size: 20px; font-weight: bold;}
+#menu .wrap .m_info1 .info_txt p:nth-of-type(2){padding: 10px 0;}
+#menu .wrap .m_info1 .info_txt p:nth-of-type(3){padding: 10px 0;}
+
+/* 상세정보 2 */
+#menu .wrap .m_info2{display: flex; justify-content: space-between; padding: 30px 0;}
+#menu .wrap .m_info2>div{width: 410px; padding: 30px; background: #fff; border: 3px solid #333;}
+#menu .wrap .m_info2 h3{display: inline-block; margin-bottom: 30px; padding-bottom: 3px; border-bottom: 3px solid #333; font-size: 28px; font-family: "main_font";}
+#menu .wrap .m_info2 .info_nutri{}
+#menu .wrap .m_info2 .info_nutri h3{}
+#menu .wrap .m_info2 .info_nutri table{border-top: 3px solid #333; border-bottom: 3px solid #333; width: 100%; text-align: center; border-collapse: collapse;}
+#menu .wrap .m_info2 .info_nutri table tr{}
+#menu .wrap .m_info2 .info_nutri table tr th{}
+#menu .wrap .m_info2 .info_nutri table tr td{}
+#menu .wrap .m_info2 .info_nutri table tr, th, td{height: 50px; border: 1px solid #ccc; border-left: none; border-right: none; border-collapse: collapse;}
+
+#menu .wrap .m_info2 .info_nutri table tr th:first-of-type{border-right: 2px solid #333;}
+#menu .wrap .m_info2 .info_nutri table tr:first-of-type th{border-bottom: 2px solid #333;}
+#menu .wrap .m_info2 .info_allergy{}
+#menu .wrap .m_info2 .info_allergy h3{}
+#menu .wrap .m_info2 .info_allergy p{padding-bottom: 20px;}
+#menu .wrap .m_info2 .info_allergy p:nth-of-type(1){}
+#menu .wrap .m_info2 .info_allergy p:nth-of-type(2){}
+#menu .wrap .m_info2 .info_origin{}
+#menu .wrap .m_info2 .info_origin h3{}
+#menu .wrap .m_info2 .info_origin p{}
+
+
+
+
+
+
+
+
+
+
+
+

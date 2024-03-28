@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+/* 모든 페이지의 공통 css */
+
+:root{
+	--color-red: #db0007;
+	--color-green: #30ae4b;
+	--color-yellow: #ffbc0d;
+}
+
+@font-face {
+	font-family: "main_font";
+	src: url("../font/Jalnan.ttf");
+}
+
+@font-face {
+	font-family: "sub_font";
+	src: url("../font/KoPubDotumMedium.ttf");
+}
+
+/* CSS Reset */
+* {margin: 0; padding: 0; box-sizing: border-box; font-family: "sub_font"; color: #333;} 
+li {list-style: none;}
+a {text-decoration: none; color: inherit;}
+em, i, address {font-style: normal;}
+button {border: none; background: none; cursor: pointer;}
+p {word-break: keep-all;}
+.clearfix::after {content: ''; display: block; clear: both;}
+
+/* 스크롤 이벤트 속성 */
+.scroll_on {opacity: 0; transition: all 1.5s;}
+.scroll_on_1 {opacity: 0; transition: all 1.5s 0.3s;}
+.scroll_on.active {opacity: 1 !important; transform: translate(0, 0) !important;}
+.scroll_on.type_top {transform: translate(0, -50px);}
+.scroll_on.type_bottom {transform: translate(0, 50px);}
+
+/* -------------------- 헤더 영역 -------------------- */
+#header{}
+#header .header_wrap{width: 1250px; margin: 0 auto;}
+#header .header_wrap h1{float: left;}
+#header .header_wrap h1 img{}
+#header .header_wrap .aside{display: flex; justify-content: space-between; align-content: center; float: right; width: 400px; padding-top: 25px;}
+#header .header_wrap .aside li{display: inline-block;}
+#header .header_wrap .aside li form{}
+#header .header_wrap .aside li form #text{float: left; width: 240px; border: 1px solid var(--color-red); border-radius: 25px; padding: 12px 10px; margin-right: 10px; outline: none;}
+#header .header_wrap .aside li form #search{float: right;}
+#header .header_wrap .aside li button{width: 42px; height: 42px; border: 2px solid var(--color-green); border-radius: 42px; text-align: center; color: var(--color-green); font-weight: bold;  background: #fff;}
+#header .header_wrap .aside li button:hover{background: var(--color-green); color: #fff;}
+
+#header .header_wrap .aside li button.eng_btn{}
+#header .header_wrap .aside li buttton.kor_btn{}
+
+#header .gnb_wrap{border-top: 2px solid var(--color-yellow); border-bottom: 2px solid var(--color-yellow);}
+#header .gnb_wrap span{position: absolute; left: 0; top: 150px; width: 100%; height: 0px; z-index: 2; background: #fff; opacity: 0.9; transition: 0.5s;}
+#header .gnb_wrap .gnb{position: relative; display: flex; justify-content: space-between; margin: 0 auto; width: 1178px; font-size: 20px; font-weight: bold;}
+#header .gnb_wrap .gnb>li{padding: 15px 0;}
+#header .gnb_wrap .gnb>li::before{content: ''; display: block; position: relative; left: 0; top: 25px; z-index: -1; width: 0; height: 5px; background: var(--color-yellow); transition: width 0.3s;}
+#header .gnb_wrap .gnb>li>a{transition: 0.3s;}
+#header .gnb_wrap .gnb>li>ul{position: absolute; z-index: 2; height: 0; margin-top: 20px; overflow: hidden; transition: all 0.5s;}
+#header .gnb_wrap .gnb>li>ul>li{padding: 12px 0;}
+#header .gnb_wrap .gnb>li>ul>li>a::before{content: ''; display: block; position: relative; left: 0; top: 25px; width: 0; height: 3px; background: var(--color-red); opacity: 0.5; transition: width 0.3s;}
+#header .gnb_wrap .gnb>li>ul>li>a{display: inline-block;  font-size: 18px; transition: all 0.3s;}
+
+#header .gnb_wrap:hover .sub_bg{height: 380px;}
+#header .gnb_wrap:hover .gnb>li>ul{height: 350px;}
+#header .gnb_wrap .gnb>li:hover>a{color: var(--color-red); opacity: 0.8;}
+#header .gnb_wrap .gnb>li:hover::before{width: 100%;}
+#header .gnb_wrap .gnb>li>ul>li:hover>a::before{width: 100%;}
+
+
+
+/* -------------------- 푸터 영역 -------------------- */
+#footer{padding: 40px 0; background: #333;}
+#footer .wrap{width: 1179px; margin: 0 auto;}
+#footer .wrap h1{}
+#footer .wrap h1 img{}
+/* ---- fnb 공통 속성 ---- */
+#footer .wrap .fnb{display: flex; justify-content: space-between; padding: 25px 0;}
+#footer .wrap .fnb div{}
+#footer .wrap .fnb h3{padding-bottom: 15px; font-size: 20px; color: #fff;}
+#footer .wrap .fnb ul{}
+#footer .wrap .fnb ul li{padding: 4px 0; font-size: 15px;}
+#footer .wrap .fnb ul li a{color: #fff;}
+#footer .wrap .fnb ul li a:hover{text-decoration: underline;}
+/* ---------------------- */
+#footer .wrap address.copyright{float: left;}
+#footer .wrap address.copyright p{padding: 2px 0; font-size: 15px; color: #808080;}
+#footer .wrap .f_sns{float: right; padding-top: 20px;}
+#footer .wrap .f_sns ul{display: flex; justify-content: space-between; align-items: center; width: 250px;}
+#footer .wrap .f_sns ul li{}
+#footer .wrap .f_sns ul li a{}
+#footer .wrap .f_sns ul li a img{}
