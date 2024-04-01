@@ -146,7 +146,7 @@
 #eco .story-box .eco_tab4 .eco_article .article_wrap a:hover .arrow{left: -5px;}
 
 /* 탭 4 슬라이드 */
-.eco_tab4 .right_side{position: relative; width: calc(100% - 370px); height: 430px;}
+.eco_tab4 .venture_tea{position: relative; width: calc(100% - 370px); height: 430px;}
 
 /* 공통 속성 */
 .eco_tab4 .swiper-container{height: 100%; border-radius: 50px 5px 5px 5px;}
@@ -158,6 +158,10 @@
 .eco_tab4 .swiper-container .swiper-wrapper .swiper-slide .text-box .text_bottom .bar{display: inline-block; width: 40px; height: 2px; margin: 70px 0 10px 0; background: #fff;}
 .eco_tab4 .swiper-container .swiper-wrapper .swiper-slide .text-box .text_bottom .text_2{font-size: 20px; font-weight: 600; margin-bottom: 20px; color: inherit;}
 .eco_tab4 .swiper-container .swiper-wrapper .swiper-slide .text-box .text_bottom .text_3{font-size: 16px; color: inherit;}
+
+.eco_tab4 .swiper-container .swiper-pagination{}
+.eco_tab4 .swiper-container .swiper-pagination-bullet{background: #fff;}
+.eco_tab4 .swiper-pagination-bullet-active{background: #fff;}
 
 /* 개별 속성 */
 .eco_tab4 .swiper-container .swiper-wrapper .slide1{background: #412a0a;}
