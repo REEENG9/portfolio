@@ -2,8 +2,8 @@
 
 // #eco 탭 메뉴 클릭 이벤트
 function ecoBtn(e){
-	$('#eco .story-box>div').css("display", "none");
-	$('#eco .story-box>div').eq(e).css("display", "flex");
+	$('#eco .story-box .eco_tab_wrap>ul>li').css("display", "none");
+	$('#eco .story-box .eco_tab_wrap>ul>li').eq(e).css("display", "flex");
 	
 	$('#eco .story-box ul.eco_tabs li button').removeClass('on');
 	$('#eco .story-box ul.eco_tabs li').eq(e).children('button').addClass('on');
