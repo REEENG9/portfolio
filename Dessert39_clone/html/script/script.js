@@ -1,10 +1,9 @@
 // JavaScript Document
 
 // #eco 탭 메뉴 클릭 이벤트
-// li 영역도 addClass로 바꿀 것
 function ecoBtn(e){
-	$('#eco .story-box .eco_tab_wrap>ul>li').css("display", "none");
-	$('#eco .story-box .eco_tab_wrap>ul>li').eq(e).css("display", "flex");
+	$('#eco .story-box .eco_tab_wrap>ul>li').removeClass('on');
+	$('#eco .story-box .eco_tab_wrap>ul>li').eq(e).addClass('on');
 	
 	$('#eco .story-box ul.eco_tabs li button').removeClass('on');
 	$('#eco .story-box ul.eco_tabs li').eq(e).children('button').addClass('on');
