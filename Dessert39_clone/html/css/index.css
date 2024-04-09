@@ -43,7 +43,7 @@
 /* 메인 영역 */
 #main{}
 /* -------------------- 섹션1 : 탄소 중립 실천 기업 ------------------- */
-#eco{position: relative; width: 1300px; margin: 250px auto 0; letter-spacing: -0.075em}
+#eco{position: relative; width: 1300px; margin: 250px auto 0; letter-spacing: -0.075em;}
 #eco>p{text-align: center;}
 #eco p span.blink{display: block; font-size: 35px; font-weight: 800; animation: blink 0.5s ease-in-out infinite alternate;}
 #eco p u{display: inline-block; text-decoration: none; font-size: 25px; font-weight: 700; background: linear-gradient(to top, #ffb400 22%, transparent 0%);}
@@ -59,7 +59,8 @@
 #eco .story-box ul.eco_tabs li:hover button{background: var(--color-main); color: #fff;}
 
 /* 탭 1 ----------------*/
-#eco .story-box .eco_tab1{width: 100%; height: 450px; display: flex; justify-content: space-around; align-items: center;}
+#eco .story-box .eco_tab1{position: absolute; z-index: -999; display: flex; opacity: 0; width: 100%; height: 450px; justify-content: space-around; align-items: center;}
+#eco .story-box .eco_tab1.on{z-index: 1; opacity: 1;}
 #eco .story-box .eco_tab1 .eco_article{display: flex; align-items: center; width: 350px; padding-left: 10px;}
 #eco .story-box .eco_tab1 .eco_article .article_wrap{}
 #eco .story-box .eco_tab1 .eco_article .article_wrap h3{margin: 10px 0; font-size: 16px; line-height: 1.4; }
@@ -84,7 +85,8 @@
 #eco .story-box .eco_tab1 .right_side .frame img{width: 370px;}
 
 /* 탭 2 ----------------*/
-#eco .story-box .eco_tab2{width: 100%; height: 450px; display: flex; justify-content: space-around; align-items: center; display: none;}
+#eco .story-box .eco_tab2{position: absolute; z-index: -999; display: flex; opacity: 0; width: 100%; height: 450px; justify-content: space-around; align-items: center;}
+#eco .story-box .eco_tab2.on{z-index: 1; opacity: 1;}
 #eco .story-box .eco_tab2 .eco_article{display: flex; align-items: center; width: 350px; padding-left: 10px;}
 #eco .story-box .eco_tab2 .eco_article .article_wrap{}
 #eco .story-box .eco_tab2 .eco_article .article_wrap img{display: block; width: 60px;}
@@ -110,7 +112,8 @@
 #eco .story-box .eco_tab2 .right_side .frame img{width: 370px;}
 
 /* 탭 3 -------------*/
-#eco .story-box .eco_tab3{width: 100%; height: 500px; display: flex; justify-content: space-around; align-items: center; display: none;}
+#eco .story-box .eco_tab3{position: absolute; z-index: -999; display: flex; opacity: 0;  width: 100%; height: 500px; justify-content: space-around; align-items: center;}
+#eco .story-box .eco_tab3.on{z-index: 1; opacity: 1;}
 #eco .story-box .eco_tab3 .eco_article{display: flex; align-items: center; width: 350px; padding-left: 10px;}
 #eco .story-box .eco_tab3 .eco_article .article_wrap{}
 #eco .story-box .eco_tab3 .eco_article .article_wrap img{display: block; width: 60px;}
@@ -129,7 +132,9 @@
 #eco .story-box .eco_tab3 .right_side video{width: 100%; height: 100%;}
 
 /* 탭 4 -------------*/
-#eco .story-box .eco_tab4{width: 100%; height: 450px; display: flex; justify-content: space-around; align-items: center;}
+/* display none으로 숨기지 말고, position, z-index, opacity 등으로 없애기 (스와이퍼랑 충돌함) */
+#eco .story-box .eco_tab4{position: absolute; z-index: -999; display: flex; width: 100%; height: 450px; margin-bottom: 250px; justify-content: space-around; align-items: center; opacity: 0;}
+#eco .story-box .eco_tab4.on{z-index: 1; opacity: 1;}
 #eco .story-box .eco_tab4 .eco_article{display: flex; align-items: center; width: 350px; padding-left: 10px;}
 #eco .story-box .eco_tab4 .eco_article .article_wrap{}
 #eco .story-box .eco_tab4 .eco_article .article_wrap .logo_grid{display: grid; grid-template-columns: repeat(4, 60px); grid-gap: 10px;}
@@ -151,11 +156,11 @@
 /* 공통 속성 */
 .eco_tab4 .swiper-container{height: 100%; border-radius: 50px 5px 5px 5px;}
 .eco_tab4 .swiper-container .swiper-wrapper{}
-.eco_tab4 .swiper-container .swiper-wrapper .swiper-slide{display: flex; justify-content: space-between; align-items: center; padding: 40px 30px 40px 40px; }
-.eco_tab4 .swiper-container .swiper-wrapper .swiper-slide .text-box{display: grid; justify-content: space-between; height: 100%; color: #fff;}
+.eco_tab4 .swiper-container .swiper-wrapper .swiper-slide{display: flex; justify-content: space-between; align-items: center; padding: 40px 30px 40px 40px; background-color: #412a0a;}
+.eco_tab4 .swiper-container .swiper-wrapper .swiper-slide .text-box{display: flex; flex-wrap: wrap; width: 50%; height: 100%; color: #fff;}
 .eco_tab4 .swiper-container .swiper-wrapper .swiper-slide .text-box .text_top{font-size: 30px; font-weight: 600; color: inherit;}
 .eco_tab4 .swiper-container .swiper-wrapper .swiper-slide .text-box .text_bottom{color: #fff;}
-.eco_tab4 .swiper-container .swiper-wrapper .swiper-slide .text-box .text_bottom .bar{display: inline-block; width: 40px; height: 2px; margin: 70px 0 10px 0; background: #fff;}
+.eco_tab4 .swiper-container .swiper-wrapper .swiper-slide .text-box .text_bottom .bar{display: inline-block; width: 40px; height: 2px; margin: 30px 0 10px 0; background: #fff;}
 .eco_tab4 .swiper-container .swiper-wrapper .swiper-slide .text-box .text_bottom .text_2{font-size: 20px; font-weight: 600; margin-bottom: 20px; color: inherit;}
 .eco_tab4 .swiper-container .swiper-wrapper .swiper-slide .text-box .text_bottom .text_3{font-size: 16px; color: inherit;}
 
@@ -164,8 +169,11 @@
 .eco_tab4 .swiper-pagination-bullet-active{background: #fff;}
 
 /* 개별 속성 */
-.eco_tab4 .swiper-container .swiper-wrapper .slide1{background: #412a0a;}
-.eco_tab4 .swiper-container .swiper-wrapper .slide2{background: #412a0a;}
+.eco_tab4 .swiper-container .swiper-wrapper .slide1{background-image: url(https://pic.dessert39.com/www/img/franchise/competitiveness/se10_tea_bg.jpg);}
+.eco_tab4 .swiper-container .swiper-wrapper .slide2{background-image: url(https://pic.dessert39.com/www/img/franchise/competitiveness/se10_tea_bg.jpg);}
+.eco_tab4 .swiper-container .swiper-wrapper .slide3{}
+.eco_tab4 .swiper-container .swiper-wrapper .slide4{background-image: url(https://pic.dessert39.com/www/img/franchise/competitiveness/se10_tea_bg_JAS.png); background-position: 100% 50%; background-size: cover;}
+.eco_tab4 .swiper-container .swiper-wrapper .slide5{background-image: url(https://pic.dessert39.com/www/img/franchise/competitiveness/se10_tea_bg_vegan.png); background-position: 72% 50%; background-size: cover;}
 
 .eco_tab4 .swiper-container .swiper-slide .frame{}
 .eco_tab4 .swiper-container .swiper-slide .frame img{width: 420px;}
@@ -178,6 +186,6 @@
 
 
 /* -------------------- 섹션2 : 디저트 ------------------- */
-#dessert{width: 1300px; margin: 250px auto 0; text-align: center; letter-spacing: -0.075em;}
+#dessert{width: 1300px; margin: 800px auto 0; text-align: center; letter-spacing: -0.075em;}
 #dessert h2{padding: 10px 0 50px; font-size: 65px; font-weight: 500; text-align: center; letter-spacing: -0.075em;}
 
