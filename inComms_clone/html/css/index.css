@@ -95,6 +95,7 @@
 #story .swiper-container ul li .txt_box p{font-size: 30px;}
 #story .swiper-container ul li .txt_box p br.mobile_show{display: none;}
 #story .swiper-container ul li .txt_box a{position: absolute; bottom: 70px; font-size: 14px;}
+#story .swiper-container ul li .txt_box a::after{content: ""; display: inline-block; width: 10px; height: 10px; margin-left: 3px; background: url("../img/more_btn_icon2.svg") no-repeat; background-size: 10px 10px;}
 
 #story .swiper-container .pagi-bullet{position: relative; left: 0; top: -40px; z-index: 1; max-width: 1180px; width: 100%; height: 100%; margin: 0 auto;}
 #story .swiper-container .swiper-pagination{position: absolute; left: 10px; top: 0;}
