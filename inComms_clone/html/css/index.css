@@ -1,6 +1,113 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* 메인 슬라이드 pc */
+#slide{position: relative; width: 100%; max-height: 100vh;  height: 940px;}
+#slide .swiper-container{width: 100%; height: 100%;}
+#slide .swiper-container ul{}
+#slide .swiper-container ul li{}
+#slide .swiper-container ul li.slide1{background: url("../img/banner_main1.jpg") center center no-repeat; background-size: cover;}
+#slide .swiper-container ul li.slide2{background: url("../img/banner_main2.jpg") center center no-repeat; background-size: cover;}
+#slide .swiper-container ul li .text-box{position: absolute; left: 0; top: 0; width: 100%; margin-top: 250px; padding: 0 20px; font-family: "NanumSquare"; letter-spacing: -2px;}
+#slide .swiper-container ul li .text-box h2{max-width: 1140px; margin: 0 auto; font-family: inherit; font-size: 50px; font-weight: 500;}
+#slide .swiper-container ul li .text-box p{max-width: 1140px; margin: 0 auto; font-family: inherit; font-size: 30px;}
+#slide .swiper-container .swiper-pagination{}
+#slide .swiper-container .swiper-pagination-bullet{}
+#slide .swiper-container .swiper-pagination-bullet-active{background: #ff1d00;}
+
+/* 메인 슬라이드 mobile */
 @media all and (max-width: 768px) {
-	
+	#slide{height: 420px; margin-top: 60px;}
+	#slide .swiper-container ul li.slide1{width: 100%; height: 100%; background: url("../img/banner_main1_m.jpg") no-repeat; background-size: cover; background-position: 50% 50%;}
+	#slide .swiper-container ul li.slide2{height: 100%; background: url("../img/banner_main2_m.jpg") no-repeat; background-size: cover; background-position: 50% 50%;}
+	#slide .swiper-container ul li .text-box{margin-top: 150px; padding: 0; text-align: center;}
+	#slide .swiper-container ul li .text-box h2{font-size: 25px;}
+	#slide .swiper-container ul li .text-box p{margni-top:
+	9px; font-size: 25px;}
+	#slide .swiper-container .swiper-pagination-bullet{width: 6px; height: 6px;}
 }
+
+/* 메인 영역 */
+#main{}
+
+/* 섹션 1 : about inComms */
+#about_info{padding: 50px 0; text-align: center; letter-spacing: -1px;}
+#about_info h2{font-size: 40px; font-weight: normal;}
+#about_info h2 i.logo_icon{display: inline-block; width: 160px; height: 30px; margin-left: 10px; background: url("../img/logo.svg") no-repeat; background-size: 160px 30px;}
+#about_info p{padding: 30px 0 40px 0; line-height: 30px;}
+#about_info img{max-width: 520px; height: 200px;}
+
+/* 섹션 1 모바일 */
+@media all and (max-width: 768px) {
+	#about_info{padding: 50px 20px;}
+	#about_info h2{font-size: 19px;}
+	#about_info h2 i.logo_icon{width: 94px; height: 18px; background-size: 94px 18px;}
+	#about_info p{font-size: 15px;}
+	#about_info p br.pc_show{display: none !important;}
+	#about_info img{display: block; max-width: 500px;  width: 100%; height: auto; margin: 0 auto;}
+}
+
+/* 섹션 2 : in News */
+#news{padding: 77px 10px 80px; background: #f5f6f7;}
+#news .inner{position: relative; margin: 0 auto;}
+#news h2{padding-bottom: 50px; font-size: 20px;}
+#news .swiper-container{width: 100%; height: 100%;}
+#news .swiper-container ul{}
+#news .swiper-container ul li{}
+#news .swiper-container ul li a{color: #666;}
+#news .swiper-container ul li a .img_box{display: block; max-width: 100%; max-height: 100%; min-height: 240px; height: 100%; margin-bottom: 28px;}
+#news .swiper-container ul li a .img_box:hover{opacity: 0.8;}
+#news .swiper-container ul li.slide1 a .img_box{background: url("../img/news_img1.jpg") center center no-repeat; background-size: cover;}
+#news .swiper-container ul li.slide2 a .img_box{background: url("../img/news_img2.jpg") center center no-repeat; background-size: cover;}
+#news .swiper-container ul li.slide3 a .img_box{background: url("../img/news_img3.jpg") center center no-repeat; background-size: cover;}
+#news .swiper-container ul li a strong{display: block; color: #444;}
+#news .swiper-container ul li a p{padding: 10px 0; color: inherit;}
+#news .swiper-container ul li a span{color: inherit;}
+#news a.more_btn{position: absolute; right: 0; top: 0; color: #666;}
+#news a.more_btn::after{content: ""; display: inline-block; background: url("../img/more_btn_icon.svg"); width: 10px; height: 10px; background-size: 10px 10px;} 
+
+/* 섹션 2 모바일 */
+@media all and (max-width: 768px) {
+	#news{padding: 40px 10px;}
+	#news h2{float: auto; padding-bottom: 23px; text-align: center;}
+	#news .swiper-container ul li{width: 50%; padding-bottom: 30px;}
+	#news .swiper-container ul li a{letter-spacing: -1px;}
+	#news .swiper-container ul li a .img_box{width: 100%; min-height: 240px; height: 100%; margin-bottom: 28px; object-fit: cover;}
+	#news .swiper-container ul li a strong{font-size: 18px; color: #333;}
+	#news .swiper-container ul li a p{font-size: 15px;}
+	#news a.more_btn{display: block; position: relative; left: 0; bottom: 0; width: 100%; padding: 10px 0; border: 1px solid #d8d8d8; text-align: center;}
+}
+
+/* 섹션 3 : in Story */
+#story{background: #e9edf0; height: 300px;}
+#story .swiper-container{height: 100%;}
+#story .swiper-container ul{max-width: 1180px; width: 100%; margin: 0 auto; background: gold;}
+#story .swiper-container ul li{}
+#story .swiper-container ul li .img_box{}
+#story .swiper-container ul li.slide1 .img_box{background: url("../img/story_banner_model_1.png") center center no-repeat; background-size: 320px 290px;}
+#story .swiper-container ul li.slide2 .img_box{background: url("../img/story_banner_model_2.png") center center no-repeat; background-size: 320px 290px;}
+#story .swiper-container ul li.slide3 .img_box{background: url("../img/story_banner_model_3.png") center center no-repeat; background-size: 320px 290px;}
+#story .swiper-container ul li.slide4 .img_box{background: url("../img/story_banner_model_4.png") center center no-repeat; background-size: 320px 290px;}
+#story .swiper-container ul li .txt_box{padding-top: 30px;}
+#story .swiper-container ul li .txt_box .top_txt{}
+#story .swiper-container ul li .txt_box .top_txt span{}
+#story .swiper-container ul li .txt_box .top_txt span:nth-of-type(1){}
+#story .swiper-container ul li .txt_box p{}
+#story .swiper-container ul li .txt_box p br.mobile_show{display: none;}
+#story .swiper-container ul li .txt_box a{}
+#story .swiper-container .swiper-pagination{text-align: left;}
+#story .swiper-container .swiper-pagination-bullet{}
+#story .swiper-container .swiper-pagination-bullet-active{background: #ff1d00;}
+
+#contact{height: 300px; background: #ccc;}
+
+
+
+
+
+
+
+
+
+
+

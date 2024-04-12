@@ -2,35 +2,40 @@
 /* CSS Document */
 
 /* CSS Reset */
-* {margin: 0; padding: 0; box-sizing: border-box; font-family: "Nanum Gothic"; word-break: keep-all; color: #666;} 
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+* {margin: 0; padding: 0; box-sizing: border-box; font-family: "NanumSquare", "NanumGothic"; word-break: keep-all; color: #333;} 
 li {list-style: none;}
 a {text-decoration: none; color: inherit;}
 em, i, address {font-style: normal;}
 button {border: none; background: none; cursor: pointer;}
 .clearfix::after {content: ''; display: block; clear: both;}
+.inner{max-width: 1180px;}
+
 
 /* pc 헤더 영역 */
-#header{position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 65px; border-bottom: 1px solid #ccc; background: #fff;}
-#header .inner{max-width: 1220px; height: 100%; margin: 0 auto; padding: 0 20px; background: #fff;}
+#header{position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 65px; border-bottom: 1px solid rgba(0,0,0,0); transition: all 0.3s;}
+#header.active{border-bottom: 1px solid #ccc; background: #fff;}
+#header .inner{height: 100%; margin: 0 auto; padding: 0 20px;}
 #header h1{float: left; padding-top: 10px;}
 #header h1 a{}
 #header h1 a img{width: 94px; height: 18px;}
 #header .gnb_pc{float: right; padding-top: 20px;}
 #header .gnb_pc li{float: left; margin-left: 60px;}
 #header .gnb_pc li a{color: #333; font-size: 15px; font-weight: 700;}
-#header .gnb_pc li a::after{}
+#header .gnb_pc li a::after{content: ""; display: block; position: relative; left: 0; bottom: 0; width: 0; height: 2px; background: #cd0000; transition: all 0.3s;}
+#header .gnb_pc li:hover a::after{width: 100%;}
 #header button{display: none;}
 #header .gnb_bg{display: none;}
 #header .menu{display: none;}
 
 /* tablet - moblie 헤더 영역 */
 @media all and (max-width: 768px) {
-	#header{height: 60px;}
+	#header{height: 60px; border-bottom: 1px solid rgba(0,0,0,0);}
 	#header h1{padding-top: 7px;}
 	#header h1 a img{width: 78px; height: 15px;}
 	#header .gnb_pc{display: none;}
 	#header button{display: block; float: right; margin-top: 16px; width: 24px;}
-	#header button span{display: block; width: 24p; height: 1px; margin-top: 6px; background: #000;}
+	#header button span{display: block; width: 24px; height: 1px; margin-top: 6px; background: #000;}
 	#header .gnb_bg{display: none;}
 	#header .gnb_bg.on{display: block; width: 100%; height: 100vh; opacity: 1; background: rgba(0,0,0,0.5);}
 	#header .menu{display: block; position: fixed; top: 0; right: -275px; width: 275px; height: 100vh; padding: 70px 10px 0; background: #fff; transition: 0.6s;}
