@@ -44,9 +44,10 @@
 #main{}
 /* -------------------- 섹션1 : 탄소 중립 실천 기업 ------------------- */
 #eco{position: relative; width: 1300px; margin: 250px auto 0; letter-spacing: -0.075em;}
-#eco>p{text-align: center;}
-#eco p span.blink{display: block; font-size: 35px; font-weight: 800; animation: blink 0.5s ease-in-out infinite alternate;}
-#eco p u{display: inline-block; text-decoration: none; font-size: 25px; font-weight: 700; background: linear-gradient(to top, #ffb400 22%, transparent 0%);}
+#eco>p{padding-bottom: 30px; text-align: center;}
+#eco>p span.top_txt{padding: 12px 25px; border-radius: 25px; font-size: 20px; font-weight: 600; line-height: 1.4; background: rgb(50, 184, 164); background: linear-gradient(36deg, rgba(50, 184, 164, 1) 0%, rgba(144, 235, 168, 1) 100%); color: #fff;}
+#eco p span.blink{display: block; padding: 30px 0; font-size: 35px; font-weight: 600; animation: blink 0.5s ease-in-out infinite alternate;}
+#eco p u{display: inline-block; text-decoration: none; height: 20px; line-height: 100%; font-size: 20px; font-weight: 700; background: linear-gradient(to top, #ffb400 22%, transparent 0%);}
 #eco h2{padding: 10px 0 50px; font-size: 65px; font-weight: 500; text-align: center; letter-spacing: -0.075em;}
 #eco .story-box{}
 #eco .story-box ul.eco_tabs{display: flex; justify-content: center; margin-bottom: 50px;}
@@ -75,6 +76,7 @@
 #eco .story-box .eco_tab1 .eco_article .article_wrap a:hover .arrow{left: -5px;}
 
 #eco .story-box .eco_tab1 .right_side{display: flex; justify-content: space-between; align-items: center; width: calc(100% - 370px); height: 430px; padding: 40px 30px 40px 40px; border-radius: 50px 5px 5px 5px; background: url("../img/se10_esg_bg01_2.jpg") center center no-repeat; background-size: cover;}
+#eco .story-box .eco_tab1 .right_side::after{content: ''; position: absolute; right: -4%; bottom: -10%; z-index: -1; width: 45%; height: 240px; border-radius: 50px; background: url("../img/store_interior_bg.jpg") center center no-repeat; background-size: cover;}
 #eco .story-box .eco_tab1 .right_side .green{font-weight: bold; color: var(--color-green);}
 #eco .story-box .eco_tab1 .right_side .txt-box{color: #fff;}
 #eco .story-box .eco_tab1 .right_side .txt-box .text_1{font-size: 30px; font-weight: 600; color: inherit;}
@@ -102,6 +104,7 @@
 #eco .story-box .eco_tab2 .eco_article .article_wrap a:hover .arrow{left: -5px;}
 
 #eco .story-box .eco_tab2 .right_side{display: flex; justify-content: space-between; align-items: center; width: calc(100% - 370px); height: 430px; padding: 40px 30px 40px 40px; border-radius: 50px 5px 5px 5px; background: url("../img/se10_esg_bg01.jpg") center center no-repeat; background-size: cover;}
+#eco .story-box .eco_tab2 .right_side::after{content: ''; position: absolute; right: -4%; bottom: -10%; z-index: -1; width: 45%; height: 240px; border-radius: 50px; background: url("../img/store_interior_bg.jpg") center center no-repeat; background-size: cover;}
 #eco .story-box .eco_tab2 .right_side .green{font-weight: bold; color: var(--color-green);}
 #eco .story-box .eco_tab2 .right_side .txt-box{color: #fff;}
 #eco .story-box .eco_tab2 .right_side .txt-box .text_1{font-size: 30px; font-weight: 600; color: inherit;}
@@ -129,6 +132,7 @@
 #eco .story-box .eco_tab3 .eco_article .article_wrap a:hover .arrow{left: -5px;}
 
 #eco .story-box .eco_tab3 .right_side{display: flex; justify-content: space-between; align-items: center; width: calc(100% - 370px); height: 500px; border-radius: 50px 5px 5px 5px; overflow: hidden; background: #000;}
+#eco .story-box .eco_tab3 .right_side::after{content: ''; position: absolute; right: -4%; bottom: -10%; z-index: -1; width: 45%; height: 240px; border-radius: 50px; background: url("../img/store_interior_bg.jpg") center center no-repeat; background-size: cover;}
 #eco .story-box .eco_tab3 .right_side video{width: 100%; height: 100%;}
 
 /* 탭 4 -------------*/
@@ -152,6 +156,7 @@
 
 /* 탭 4 슬라이드 */
 .eco_tab4 .venture_tea{position: relative; width: calc(100% - 370px); height: 430px;}
+#eco .story-box .eco_tab4 .venture_tea::after{content: ''; position: absolute; right: -5%; bottom: -10%; z-index: -1; width: 60%; height: 240px; border-radius: 50px; background: url("../img/store_interior_bg.jpg") center center no-repeat; background-size: cover;}
 
 /* 공통 속성 */
 .eco_tab4 .swiper-container{height: 100%; border-radius: 50px 5px 5px 5px;}
