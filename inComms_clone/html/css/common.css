@@ -9,13 +9,17 @@ a {text-decoration: none; color: inherit;}
 em, i, address {font-style: normal;}
 button {border: none; background: none; cursor: pointer;}
 .clearfix::after {content: ''; display: block; clear: both;}
-.inner{max-width: 1180px;}
+.inner{max-width: 1180px; margin: 0 auto;}
 
+/* 스킵 내비게이션 */
+.skip-nav{position: absolute; left: 0; top: 0; z-index: 1000;}
+.skip-nav a{display: block; width: 0; padding: 0; font-size: 0; text-align: center; background: #333; color: #fff;}
+.skip-nav a:focus{width: 150px; padding: 10px 0; font-size: 15px; text-align: center;}
 
 /* pc 헤더 영역 */
 #header{position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 65px; border-bottom: 1px solid rgba(0,0,0,0); transition: all 0.3s;}
 #header.active{border-bottom: 1px solid #ccc; background: #fff;}
-#header .inner{height: 100%; margin: 0 auto; padding: 0 20px;}
+#header .inner{height: 100%; padding: 0 20px;}
 #header h1{float: left; padding-top: 10px;}
 #header h1 a{}
 #header h1 a img{width: 94px; height: 18px;}
@@ -37,13 +41,44 @@ button {border: none; background: none; cursor: pointer;}
 	#header button{display: block; float: right; margin-top: 16px; width: 24px;}
 	#header button span{display: block; width: 24px; height: 1px; margin-top: 6px; background: #000;}
 	#header .gnb_bg{display: none;}
-	#header .gnb_bg.on{display: block; width: 100%; height: 100vh; opacity: 1; background: rgba(0,0,0,0.5);}
+	#header .gnb_bg.on{position: absolute; left: 0; top: 0; z-index: 1000; display: block; width: 100%; height: 100vh; opacity: 1; background: rgba(0,0,0,0.5);}
 	#header .menu{display: block; position: fixed; top: 0; right: -275px; width: 275px; height: 100vh; padding: 70px 10px 0; background: #fff; transition: 0.6s;}
-	#header .menu.on{right: 0;}
+	#header .menu.on{z-index: 1000; right: 0;}
 	#header .menu button{position: absolute; top: 0; right: 15px;}
 	#header .menu button img{}
 	#header .menu .gnb_mo{}
 	#header .menu .gnb_mo li{height: 57px; padding-right: 10px; line-height: 57px; border-bottom: 1px solid #ddd; text-align: right;}
 	#header .menu .gnb_mo li:first-of-type{border-top: 1px solid #ddd;}
 	#header .menu .gnb_mo li a{display: block; color: rgba(0,0,0,0.6);}
+}
+
+/* pc 푸터 영역 */
+#footer{padding: 38px 0; background: #f0f0f0;}
+#footer .inner{width: 100%;}
+#footer .info_left{float: left;}
+#footer .info_left a{}
+#footer .info_left a img{width: 90px; height: 17px;}
+#footer .info_left address{float: right; padding-left: 30px; font-size: 12px;}
+#footer .info_left address p{padding-top: 3px; color: #666666;}
+#footer .info_left address p:nth-of-type(2){padding-top: 3px; color: #adadad;}
+#footer .fnb{float: right;}
+#footer .fnb li{float: left;}
+#footer .fnb li:not(:last-of-type)::after{content: ""; display: inline-block; width: 1px; height: 12px; border-right: 1px solid #dedede; margin-right: 10px; padding-right: 10px;}
+#footer .fnb li a{font-size: 12px;}
+
+@media all and (max-width: 1180px) {
+	#footer{padding: 38px 10px;}
+	#footer .info_left address{padding-left: 10px;}
+	#footer .info_left a img{width: 70px; height: 15px;}
+}
+
+/* tablet - mobile 푸터 영역 */
+@media all and (max-width: 768px) {
+	#footer{padding: 30px 0 40px 0;}
+	#footer .info_left{float: none; width: 100%; text-align: center;}
+	#footer .info_left a{display: block;}
+	#footer .info_left a img{width: 55px; height: 11px;}
+	#footer .info_left address{float: none; text-align: center; font-size: 10px;}
+	#footer .info_left address p:first-of-type{display: none;}
+	#footer .fnb{display: none;}
 }

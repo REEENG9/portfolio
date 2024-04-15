@@ -2,6 +2,9 @@
 <html><head>
 <meta charset="utf-8">
 <title>방지민 포트폴리오 3</title>
+	<!-- 반응형 메타식 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
 	<!-- CSS,JS 연동식 -->
 	<link rel="stylesheet" type="text/css" href="css/common.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
@@ -40,8 +43,12 @@
 </head>
 
 <body>
+	<!-- 스킵 내비게이션 -->
+	<div class="skip-nav">
+		<a href="#slide">메뉴 건너뛰기</a>
+	</div>
 	
-	<!-- 헤더 시작 -->
+	<!-- 헤더 영역 -->
 	<header id="header">
 		<div class="inner clearfix">
 			<h1><a href="index.html"><img src="img/logo.svg" alt="top_logo"></a></h1>
@@ -111,7 +118,36 @@
 			<div class="inner">
 				<h2>in 소식</h2>
 				
-				<div class="swiper-container noSwipe">
+				<!-- pc 화면 -->
+				<ul class="news_list clearfix">
+					<li>
+					 	<a href="#">
+							<div class="img_box"></div>
+							<strong>인컴즈 산업통상자원부 장관 표창</strong>
+							<p>인컴즈는 에너지 취약계층을 위해 연탄 나눔을 꾸준히 실천한 공로를 인정받아 지난 1월 10일 산업통상자원부 장관 표창을 받았습니다.</p>
+							<span>2024-01-10</span>
+						</a>
+					</li>
+					<li>
+					 	<a href="#">
+							<div class="img_box"></div>
+							<strong>2024 인컴즈 신년광고</strong>
+							<p>새해를 맞이하여, 2024년도 신년광고 소개로 인컴즈 가족 여러분께 인사를 올립니다. 2024년 한 해도 인컴즈와 함께 청룡의 기운 가득한멋진 시간들로 채워가세요!</p>
+							<span>2024-01-02</span>
+						</a>
+					</li>
+					<li>
+					 	<a href="#">
+							<div class="img_box"></div>
+							<strong>2023 인컴즈 사랑의 연탄 나눔</strong>
+							<p>인컴즈는 에너지 취약계층을 위해 연탄 나눔을 꾸준히 실천한 공로를 인정받아 지난 1월 10일 산업통상자원부 장관 표창을 받았습니다.</p>
+							<span>2023-12-26</span>
+						</a>
+					</li>
+				</ul>
+				
+				<!-- mobile 화면 -->
+				<div class="swiper-container">
 					<ul class="swiper-wrapper">
 						<li class="swiper-slide slide1">
 						<a href="#">
@@ -149,7 +185,7 @@
 			<div class="swiper-container">
 				<ul class="swiper-wrapper">
 					<li class="swiper-slide slide1">
-						<div class="box">
+						<div class="inner">
 							<div class="txt_box">
 								<div class="top_txt">
 									<span>쇼핑서비스서포트팀</span>
@@ -166,7 +202,7 @@
 						</div>
 					</li>
 					<li class="swiper-slide slide2">
-						<div class="box">
+						<div class="inner">
 							<div class="txt_box">
 								<div class="top_txt">
 									<span>웹표준UI서포트팀</span>
@@ -183,7 +219,7 @@
 						</div>
 					</li>
 					<li class="swiper-slide slide3">
-						<div class="box">
+						<div class="inner">
 							<div class="txt_box">
 								<div class="top_txt">
 									<span>UI디자인서포트팀</span>
@@ -200,7 +236,7 @@
 						</div>
 					</li>
 					<li class="swiper-slide slide4">
-						<div class="box">
+						<div class="inner">
 							<div class="txt_box">
 								<div class="top_txt">
 									<span>회원&amp;UGC서비스CS팀</span>
@@ -222,26 +258,81 @@
 				</div>
 			</div>
 		</section>
+		
+		<!-- section 4 : Contact  -->
 		<section id="contact">
-			
+			<div class="inner clearfix">
+				<h2>Contact</h2>
+				<div class="contact_pc">
+					<div class="cont_btn clearfix">
+						<button class="on">춘천 본사</button>
+						<button>광주 사업장</button>
+					</div>
+					<div class="cont_contents">
+						<div class="chuncheon on">
+							<p>
+								강원도 춘천시 퇴계로 89 주식회사 인컴즈(강원전문건설회관)<br>
+								<span>TEL. 033-259-2701</span>
+								<span>FAX. 033-259-2777</span>
+							</p>
+							
+							<div class="map">
+								<!-- 카카오맵 지도 -->
+								<div id="daumRoughmapContainer1713148432129" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+								<!-- 카카오맵 지도 설치 -->
+								<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+								<!-- 실행 스크립트 -->
+								<script charset="UTF-8">
+									new daum.roughmap.Lander({
+										"timestamp" : "1713148432129",
+										"key" : "2iy6n",
+										// "mapWidth" : "748",
+										"mapHeight" : "360"
+									}).render();
+								</script>
+							</div>				
+						</div>
+						<div class="gwangju">
+							<p>
+								광주광역시 동구 금남로 219 네이버 스퀘어 광주 7층<br>
+								<span>TEL. 062-229-3072</span>
+								<span>FAX. 062-229-1284</span>
+							</p>
+							<div class="map">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.2778306645046!2d126.91184934762448!3d35.14969119900847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35718d71fcc78721%3A0x27609091772fb3e8!2z64Sk7J2067KEIO2MjO2KuOuEiOyKpO2AmOyWtCDqtJHso7w!5e0!3m2!1sko!2skr!4v1713147671788!5m2!1sko!2skr" width="100%" height="360" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="contact_mo">
+					<a href="#">춘천</a>
+					<a href="#">광주</a>
+				</div>
+			</div>
 		</section>
-	</main>
+	</main> <!-- 메인 컨텐츠 끝 -->
 	
+	<!-- 푸터 영역 -->
+	<footer id="footer">
+		<div class="inner clearfix">
+			<div class="info_left clearfix">
+				<a href="index.html"><img src="img/f_logo.svg" alt="footer logo"></a>
+				<address>
+					<p>강원도 춘천시 퇴계로 89 주식회사 인컴즈(강원전문건설회관)</p>
+					<p>Copyright © inComms. All rights reserved.</p>
+				</address>
+			</div>
+			<ul class="fnb">
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">개인정보처리방침</a></li>
+				<li><a href="#">영상정보처리기기 운영⋅관리방침</a></li>
+			</ul>
+		</div>
+	</footer>
 	<script>
-		var swiper3 = new Swiper('#story .swiper-container', {
-//			autoplay: {
-//				delay: 3000,
-//				disableOnInteraction: false
-//			},
-			slidesPerView:1,
-			loop:true,
-			pagination: {
-				el: '#story .swiper-pagination',
-				clickable: true,
-			},
-			effect: 'slide',
-			speed: 500
-		});
+		
 	</script>
 </body>
 </html>

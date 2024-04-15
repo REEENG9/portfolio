@@ -38,21 +38,43 @@ var swiper1 = new Swiper('#slide .swiper-container', {
 
 // 뉴스 목록 스와이퍼
 var swiper2 = new Swiper('#news .swiper-container', {
-	slidesPerView: 3,
-	spaceBetween: 35,
-	noSwiping: true,
-	noSwipingClass: '.noSwipe',
-
-	breakpoints: {
-		768: {
-			slidesPerView: 1,
-			centeredSlides: true,
-			noSwiping: false,
-			noSwipingClass: '.noSwipe',
-		},
-	},
+	slidesPerView: 'auto',
+	spaceBetween: 10,
+	centeredSlides: true,
 
 	loop: true,	// 무한 루프 적용
 	effect: 'slide', // slide, fade, cube, coverflow, flip
 	speed: 500
 });
+
+// in story 스와이퍼
+var swiper3 = new Swiper('#story .swiper-container', {
+	autoplay: {
+		delay: 5000,
+		disableOnInteraction: false
+	},
+	slidesPerView:1,
+	loop:true,
+	pagination: {
+		el: '#story .swiper-pagination',
+		clickable: true,
+	},
+	effect: 'slide',
+	speed: 500
+});
+
+// Contact 탭 메뉴
+$("#contact .cont_btn button:nth-of-type(1)").click(function() {
+	$("#contact").removeClass("active");
+	$(this).siblings().removeClass("on");
+	$(this).addClass("on");
+	$("#contact .cont_contents .gwangju").removeClass("on");
+	$("#contact .cont_contents .chuncheon").addClass("on");
+})
+$("#contact .cont_btn button:nth-of-type(2)").click(function() {
+	$("#contact").addClass("active");
+	$(this).siblings().removeClass("on");
+	$(this).addClass("on");
+	$("#contact .cont_contents .chuncheon").removeClass("on");
+	$("#contact .cont_contents .gwangju").addClass("on");
+})
