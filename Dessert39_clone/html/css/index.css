@@ -46,7 +46,7 @@
 #eco{position: relative; width: 1300px; margin: 250px auto 0; letter-spacing: -0.075em;}
 #eco>p{padding-bottom: 30px; text-align: center;}
 #eco>p span.top_txt{padding: 12px 25px; border-radius: 25px; font-size: 20px; font-weight: 600; line-height: 1.4; background: rgb(50, 184, 164); background: linear-gradient(36deg, rgba(50, 184, 164, 1) 0%, rgba(144, 235, 168, 1) 100%); color: #fff;}
-#eco p span.blink{display: block; padding: 30px 0; font-size: 35px; font-weight: 600; animation: blink 0.5s ease-in-out infinite alternate;}
+#eco p span.blink{display: block; padding: 30px 0 20px 0; font-size: 35px; font-weight: 600; animation: blink 0.5s ease-in-out infinite alternate;}
 #eco p u{display: inline-block; text-decoration: none; height: 20px; line-height: 100%; font-size: 20px; font-weight: 700; background: linear-gradient(to top, #ffb400 22%, transparent 0%);}
 #eco h2{padding: 10px 0 50px; font-size: 65px; font-weight: 500; text-align: center; letter-spacing: -0.075em;}
 #eco .story-box{}
@@ -190,11 +190,43 @@
 
 
 
+/* -------------------- 섹션 2 : 디저트 + 음료 (공통 속성) ------------------- */
+#product{width: 1300px; margin: 750px auto 0; text-align: center; letter-spacing: -0.075em;}
+#product h2{margin-bottom: 80px; font-size: 65px; font-weight: 500; text-align: center; letter-spacing: -0.075em;}
+#product .swiper-container{width: 85%; margin-bottom: 30px;}
+#product .swiper-container .swiper-wrapper{}
+#product .swiper-container .swiper-wrapper .swiper-slide{}
+#product .swiper-container .swiper-wrapper .swiper-slide .inner_img{padding: 40px;}
+#product .swiper-container .swiper-wrapper .swiper-slide .inner_img img{width: 80%;}
+#product .swiper-container .swiper-wrapper .swiper-slide .inner_txt{padding: 0 50px;}
+#product .swiper-container .swiper-wrapper .swiper-slide .inner_txt h3{font-size: 16px; font-weight: 600;}
+#product .swiper-container .swiper-wrapper .swiper-slide h3 span{background-image: linear-gradient(transparent calc(100% - 2px), #1c1c1c 2px); background-repeat: no-repeat; background-size: 0 100%; transition: background-size 0.7s;}
+
+#product .btn_slider_box{position: relative; display: flex; justify-content: space-between; align-items: center; width: 100%; height: 50px; margin-bottom: 30px;}
+#product .btn_slider_box button{position: static; display: block; width: 35px; height: 35px; margin-top: 2px;}
+#product .btn_slider_box button.swiper-button-prev{background: url("../img/btn-slider-arrow.svg") center center no-repeat; background-size: 35px 35px; transform: rotate(180deg);}
+#product .btn_slider_box button.swiper-button-next{background: url("../img/btn-slider-arrow.svg") center center no-repeat; background-size: 35px 35px;}
+#product .btn_slider_box .swiper-pagination{position: static; width: 85%; height: 2px; margin: 0 auto;}
+#product .btn_slider_box .swiper-pagination-progressbar{}
+#product .btn_slider_box .swiper-pagination-progressbar-fill{background: #555;}
+
+#product a.more_btn{display: block; position: relative; width: 170px; height: 45px; margin: 0 auto; border: 2px solid #1c1c1c; border-radius: 23px; line-height: 41px; color: #1c1c1c; overflow: hidden; transition: 0.45s;}
+#product a.more_btn .btn_bubble_inner{position: absolute; z-index: -1; left: 0; top: 0; width: 100%; height: 100%; overflow: hidden;}
+#product a.more_btn .btn_bubble_inner .btn_bubble_itembox{position: relative; display: block; height: 100%; filter: url(#bubble-start);}
+#product a.more_btn .btn_bubble_inner .btn_bubble_itembox .btn_bubble_item{position: absolute; top: 0; width: 25%; height: 100%; background: #1c1c1c; border-radius: 100%; transform: translate3d(0, 150%, 0) scale(1); transition: transform 0.45s;}
+#product a.more_btn .btn_bubble_inner .btn_bubble_itembox .btn_bubble_item:nth-of-type(1){left: 0%; transition-delay: 0s;}
+#product a.more_btn .btn_bubble_inner .btn_bubble_itembox .btn_bubble_item:nth-of-type(2){left: 25%; transition-delay: 0.08s;}
+#product a.more_btn .btn_bubble_inner .btn_bubble_itembox .btn_bubble_item:nth-of-type(3){left: 50%; transition-delay: 0.16s;}
+#product a.more_btn .btn_bubble_inner .btn_bubble_itembox .btn_bubble_item:nth-of-type(4){left: 75%; transition-delay: 0.24s;}
+
+#product .swiper-container .swiper-wrapper .swiper-slide:hover img{animation: menu_ani 0.8s ease alternate;}
+#product .swiper-container .swiper-wrapper .swiper-slide:hover .inner_txt h3 span{background-size: 100% 100%;}
+#product a.more_btn:hover {color: #fff;} 
+#product a.more_btn:hover .btn_bubble_inner .btn_bubble_itembox .btn_bubble_item{transform: translate3d(0,0,0) scale(1.4);}
 
 
+/* 섹션 2 개별 속성 */
+#beverage h2{margin: 150px 0 30px 0;}
+#beverage>p{margin-bottom: 80px; font-weight: 500;}
 
-
-/* -------------------- 섹션2 : 디저트 ------------------- */
-#dessert{width: 1300px; margin: 800px auto 0; text-align: center; letter-spacing: -0.075em;}
-#dessert h2{padding: 10px 0 50px; font-size: 65px; font-weight: 500; text-align: center; letter-spacing: -0.075em;}
 
