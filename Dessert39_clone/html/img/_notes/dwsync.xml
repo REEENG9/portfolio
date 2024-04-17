@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="logo-light.svg" server="bjm00.dothome.co.kr" local="133527860463722350" remote="133527543600000000" Dst="0" />
-<file name="logo-light.svg" server="wlals00.dothome.co.kr" local="133527860463722350" remote="133543199400000000" Dst="0" />
 <file name="Facebook.svg" server="wlals00.dothome.co.kr" local="133558968140644460" remote="133558753200000000" Dst="0" />
 <file name="Instagram.svg" server="wlals00.dothome.co.kr" local="133558968366550644" remote="133558753200000000" Dst="0" />
 <file name="naver.svg" server="wlals00.dothome.co.kr" local="133558968622945379" remote="133558753200000000" Dst="0" />
@@ -15,7 +13,6 @@
 <file name="banner_right.png" server="reeeng9.dothome.co.kr" local="133559812144101568" remote="133559588400000000" Dst="0" />
 <file name="Facebook.svg" server="reeeng9.dothome.co.kr" local="133558968140644460" remote="133559588400000000" Dst="0" />
 <file name="Instagram.svg" server="reeeng9.dothome.co.kr" local="133558968366550644" remote="133559588400000000" Dst="0" />
-<file name="logo-light.svg" server="reeeng9.dothome.co.kr" local="133527860463722350" remote="133559588400000000" Dst="0" />
 <file name="naver.svg" server="reeeng9.dothome.co.kr" local="133558968622945379" remote="133559588400000000" Dst="0" />
 <file name="naver_logo.png" server="reeeng9.dothome.co.kr" local="133536465303620780" remote="133559588400000000" Dst="0" />
 <file name="naver_search.png" server="reeeng9.dothome.co.kr" local="133536466994023440" remote="133559588400000000" Dst="0" />
@@ -48,7 +45,6 @@
 <file name="se10_tea_img11.png" server="reeeng9.dothome.co.kr" local="133560613542897897" remote="133560394200000000" Dst="0" />
 <file name="se10_tea_img12.png" server="reeeng9.dothome.co.kr" local="133560613198512572" remote="133560394200000000" Dst="0" />
 <file name="se10_tea_img13.png" server="reeeng9.dothome.co.kr" local="133560611642740845" remote="133560394200000000" Dst="0" />
-<file name="store_interior_bg (1).jpg" server="reeeng9.dothome.co.kr" local="133560616231122182" remote="133560394200000000" Dst="0" />
 <file name="store_interior_bg.jpg" server="reeeng9.dothome.co.kr" local="133560027623738406" remote="133560394200000000" Dst="0" />
 <file name="esg_icon3_04.png" server="reeeng9.dothome.co.kr" local="133560775079595402" remote="133560504600000000" Dst="0" />
 <file name="video_posterImg.PNG" server="reeeng9.dothome.co.kr" local="133560762223022581" remote="133560504600000000" Dst="0" />
@@ -73,4 +69,20 @@
 <file name="dessert_img7.png" server="reeeng9.dothome.co.kr" local="133577076919398595" remote="133576900800000000" Dst="0" />
 <file name="dessert_img8.png" server="reeeng9.dothome.co.kr" local="133577077134573677" remote="133576900800000000" Dst="0" />
 <file name="dessert_img9.png" server="reeeng9.dothome.co.kr" local="133577077341356142" remote="133576900800000000" Dst="0" />
+<file name="intro_img1.jpg" server="reeeng9.dothome.co.kr" local="133577264040453160" remote="133576977600000000" Dst="0" />
+<file name="intro_img2.jpg" server="reeeng9.dothome.co.kr" local="133577264184223520" remote="133576977600000000" Dst="0" />
+<file name="interior_img1.jpg" server="reeeng9.dothome.co.kr" local="133577882265861528" remote="133577667000000000" Dst="0" />
+<file name="interior_img2.jpg" server="reeeng9.dothome.co.kr" local="133577882416569594" remote="133577667000000000" Dst="0" />
+<file name="interior_img3.jpg" server="reeeng9.dothome.co.kr" local="133577882571895449" remote="133577667000000000" Dst="0" />
+<file name="interior_img4.jpg" server="reeeng9.dothome.co.kr" local="133577883061306200" remote="133577667000000000" Dst="0" />
+<file name="interior_img5.jpg" server="reeeng9.dothome.co.kr" local="133577883230690977" remote="133577667000000000" Dst="0" />
+<file name="interior_img6.jpg" server="reeeng9.dothome.co.kr" local="133577883421199420" remote="133577667000000000" Dst="0" />
+<file name="btn-slider-arrow-white.svg" server="reeeng9.dothome.co.kr" local="133578070693402852" remote="133577793600000000" Dst="0" />
+<file name="event_img1.png" server="reeeng9.dothome.co.kr" local="133578062898440932" remote="133577793600000000" Dst="0" />
+<file name="event_img2.png" server="reeeng9.dothome.co.kr" local="133578063268249554" remote="133577793600000000" Dst="0" />
+<file name="event_img3.png" server="reeeng9.dothome.co.kr" local="133578063462435133" remote="133577793600000000" Dst="0" />
+<file name="event_img4.png" server="reeeng9.dothome.co.kr" local="133578063641544258" remote="133577793600000000" Dst="0" />
+<file name="event_img5.png" server="reeeng9.dothome.co.kr" local="133578063849546753" remote="133577793600000000" Dst="0" />
+<file name="event_img6.png" server="reeeng9.dothome.co.kr" local="133578064068524733" remote="133577793600000000" Dst="0" />
+<file name="event_img7.png" server="reeeng9.dothome.co.kr" local="133578064299596419" remote="133577793600000000" Dst="0" />
 </dwsync>

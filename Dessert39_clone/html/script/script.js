@@ -34,6 +34,7 @@ var swiper1 = new Swiper('#slide_banner .swiper-container', {
 	speed: 1000
 });
 
+
 // 섹션 tab4 스와이퍼
 var swiper2 = new Swiper('.venture_tea .swiper-container', {
 	autoplay: {
@@ -90,7 +91,59 @@ var swiper4 = new Swiper('#beverage .swiper-container', {
 	speed: 500
 });
 
+// 인트로 섹션 mouseover 이벤트
+$("#intro .intro_wrap .txt_box a").hover(function() {
+	$(this).parent().siblings().find("img").addClass("active");
+}, function() {
+	$(this).parent().siblings().find("img").removeClass("active");
+})
 
+// 인테리어 섹션 스와이퍼
+var swiper5 = new Swiper('#interior .swiper-container', {
+	autoplay: {
+		delay: 5000,
+		disableOnInteraction: false
+	},
+	slidesPerView: 1,
+	loop: true,
+	pagination: {
+		el: '#interior .swiper-pagination',
+		type: 'fraction',
+		formatFractionCurrent: function (number) {
+    return '0' + number;
+		},
+		formatFractionTotal: function (number) {
+    return '0' + number;
+		}
+		
+	},
+	
+	navigation: {
+		nextEl: '#interior .swiper-button-next',
+		prevEl: '#interior .swiper-button-prev',
+	},
+	effect: 'fade',
+	speed: 500
+});
+
+// 이벤트 뉴스 스와이퍼
+var swiper6 = new Swiper('#event .swiper-container', {
+	autoplay: {
+		delay: 5000,
+		disableOnInteraction: false
+	},
+	slidesPerView: 'auto',
+	spaceBetween: 35,
+	loop: true,
+	centeredSlides: true,
+	
+	navigation: {
+		nextEl: '#event .swiper-button-next',
+		prevEl: '#event .swiper-button-prev',
+	},
+	effect: 'slide',
+	speed: 500
+});
 
 //$("#eco .story-box ul.eco_tabs li:nth-of-type(1) button").click(function() {
 //	$("#eco .story-box .eco_tab1").css("display", "flex");
