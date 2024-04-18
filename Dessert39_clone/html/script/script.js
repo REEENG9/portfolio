@@ -145,6 +145,38 @@ var swiper6 = new Swiper('#event .swiper-container', {
 	speed: 500
 });
 
+// 신규 오픈 매장 스와이퍼
+var swiper7 = new Swiper('#new_store .swiper-container', {
+	autoplay: {
+		delay: 5000,
+		disableOnInteraction: false
+	},
+	slidesPerView: 'auto',
+	spaceBetween: 20,
+	loop: true,
+	effect: 'slide',
+	speed: 500
+});
+
+// 인스타그램 스와이퍼
+var swiper8 = new Swiper('#insta .swiper-container', {
+	autoplay: {
+		delay: 5000,
+		disableOnInteraction: false
+	},
+	slidesPerView: 'auto',
+	spaceBetween: 30,
+	loop: true,
+	
+	pagination: {
+		el: '#insta .swiper-pagination',
+		type: 'progressbar',
+	},
+	
+	effect: 'slide',
+	speed: 500
+});
+
 //$("#eco .story-box ul.eco_tabs li:nth-of-type(1) button").click(function() {
 //	$("#eco .story-box .eco_tab1").css("display", "flex");
 //	$("#eco .story-box .eco_tab2").css("display", "none");

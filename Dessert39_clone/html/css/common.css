@@ -80,7 +80,7 @@ p {word-break: keep-all;}
 /* 섹션 소제목 (h2) 공통속성 */
 h2{font-size: 60px; font-weight: 500; text-align: center; letter-spacing: -0.03em;}
 
-/* more 버튼 (arrow 포함) */
+/* more 버튼 (arrow) */
 a.arrow_more{display: flex; justify-content: center; align-items: center; width: 80px; letter-spacing: 0;}
 a>span{transition: 0.3s;}
 a.arrow_more .circle{position: relative; display: inline-block; width: 20px; height: 20px; margin-left: 15px; border-radius: 20px; background: rgba(220,220,220,0.8);}
@@ -102,4 +102,7 @@ a.more_btn .more_text{position: relative; z-index: 1;}
 
 a.more_btn:hover .more_text {color: #fff;} 
 a.more_btn:hover .btn_bubble_inner .btn_bubble_itembox .btn_bubble_item{transform: translate3d(0,0,0) scale(1.4);}
+
+/* 푸터 영역 */
+#footer{height: 300px; background: #f4f5f6;}
 
