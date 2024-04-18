@@ -104,5 +104,30 @@ a.more_btn:hover .more_text {color: #fff;}
 a.more_btn:hover .btn_bubble_inner .btn_bubble_itembox .btn_bubble_item{transform: translate3d(0,0,0) scale(1.4);}
 
 /* 푸터 영역 */
-#footer{height: 300px; background: #f4f5f6;}
-
+#footer{background: #f4f5f6;}
+#footer .inner{width: 1300px; margin: 0 auto; background: pink;}
+#footer h2{}
+#footer h2 a{}
+#footer h2 a img{}
+#footer address{}
+#footer address ul{}
+#footer address ul li{}
+#footer address ul li h4{}
+#footer address ul li p{}
+#footer address ul li a{}
+#footer .contact{}
+#footer .contact .top{}
+#footer .contact .top a{}
+#footer .contact .top a span{}
+#footer .contact .top a span i{}
+#footer .contact .top h3{}
+#footer .contact .top ul{}
+#footer .contact .top ul li{}
+#footer .contact .top ul li a {}
+#footer .contact .top ul li a img{}
+#footer .contact .bottom{}
+#footer .contact .bottom h3{}
+#footer .contact .bottom a{}
+#footer .contact .bottom a i{}
+#footer .contact .bottom a i span{}
+#footer p{text-align: center; padding: 22px 2.5%; border-top: 1px solid #c2c2c3; font-size: 15px;}
