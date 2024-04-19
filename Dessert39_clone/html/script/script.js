@@ -5,6 +5,23 @@ document.addEventListener("scroll", () => {
 	else top_header.classList.remove("active");	
 })
 
+// 고정 메뉴 스크롤 이벤트
+const fixed_menu = document.querySelector("#fixed_menu");
+
+function getScrollPer() { // 현재 스크롤 위치 퍼센트 값
+	// (현재 스크롤 된 값 + 현재 보여지는 viewport 높이) / 현재 문서의 전체 높이 * 100
+	return (window.scrollY + window.innerHeight) / document.body.clientHeight * 100;
+}
+document.addEventListener("scroll", () => {
+	const currentPer = getScrollPer();
+	if (currentPer > 20 && currentPer < 95) fixed_menu.classList.add("active");
+	else fixed_menu.classList.remove("active");	
+})
+// 고정 메뉴 top 버튼
+$("#fixed_menu ul li button").click(function() {
+	window.scrollTo({top: 0, behavior: 'smooth'});
+})
+
 // #eco 탭 메뉴 클릭 이벤트
 function ecoBtn(e){
 	$('#eco .story-box .eco_tab_wrap>ul>li').removeClass('on');
