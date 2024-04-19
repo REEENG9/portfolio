@@ -59,8 +59,8 @@
 #eco .story-box ul.eco_tabs li{margin: 0 10px;}
 #eco .story-box ul.eco_tabs li button{display: flex; align-items: center; height: 100px; padding: 10px 30px; border: 3px solid var(--color-main); border-radius: 100px; font-size: 23px; font-weight: 500; background: #fff; transition: 0.3s;}
 #eco .story-box ul.eco_tabs li button.on{background: var(--color-main); color: #fff;}
-#eco .story-box ul.eco_tabs li button p{color: inherit;}
-#eco .story-box ul.eco_tabs li button p span{font-size: 19px; color: inherit;}
+#eco .story-box ul.eco_tabs li button span{color: inherit;}
+#eco .story-box ul.eco_tabs li button span .small{font-size: 19px; color: inherit;}
 
 #eco .story-box ul.eco_tabs li:hover button{background: var(--color-main); color: #fff;}
 #eco .story-box .eco_tab_wrap{height: 450px;}

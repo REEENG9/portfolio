@@ -139,13 +139,13 @@ a.more_btn:hover .btn_bubble_inner .btn_bubble_itembox .btn_bubble_item{transfor
 #footer h2{float: left; width: 150px;}
 #footer h2 a{display: flex;}
 #footer h2 a img{width: 100%;}
-#footer address{float: left; margin-left: 70px;}
-#footer address ul{}
-#footer address ul li{display: flex; margin-bottom: 15px;}
-#footer address ul li h4{position: relative; margin-right: 10px;}
-#footer address ul li h4::after{content: ''; position: absolute; right: -10px; top: 6px; width: 1px; height: 50%; border-right: 1px solid #7b7b7b;}
-#footer address ul li p{margin-left: 10px;}
-#footer address ul li a{margin-left: 10px;}
+#footer .company{float: left; margin-left: 70px;}
+#footer .company ul{}
+#footer .company ul li{display: flex; margin-bottom: 15px;}
+#footer .company ul li h4{position: relative; margin-right: 10px;}
+#footer .company ul li h4::after{content: ''; position: absolute; right: -10px; top: 6px; width: 1px; height: 50%; border-right: 1px solid #7b7b7b;}
+#footer .company ul li p{margin-left: 10px;}
+#footer .company ul li a{margin-left: 10px;}
 #footer .contact{float: right; text-align: right;}
 #footer .contact .top{margin-bottom: 25px;}
 #footer .contact .top>a{display: flex; justify-content: space-between; align-items: center; width: 210px; margin-left: auto; margin-bottom: 15px; padding: 10px 30px; border-radius: 30px; background: #1b1b1b;}
