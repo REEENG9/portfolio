@@ -17,9 +17,10 @@ document.addEventListener("scroll", () => {
 	if (currentPer > 20 && currentPer < 95) fixed_menu.classList.add("active");
 	else fixed_menu.classList.remove("active");	
 })
+
 // 고정 메뉴 top 버튼
 $("#fixed_menu ul li button").click(function() {
-	window.scrollTo({top: 0, behavior: 'smooth'});
+	$('html, body').animate({scrollTop:0}, 300);
 })
 
 // #eco 탭 메뉴 클릭 이벤트

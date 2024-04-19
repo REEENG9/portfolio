@@ -83,8 +83,8 @@ p {word-break: keep-all;}
 #header #header_wrap .sns ul li:nth-of-type(5) a img{width: 22px; height: 22px;}
 
 /* 오른쪽 고정 메뉴 */
-#fixed_menu{position: fixed; right: 0.5vw; top: 50%; z-index: 999; width: 70px; height: 240px; opacity: 0; transition: 0.3s;}
-#fixed_menu.active{opacity: 1;}
+#fixed_menu{position: fixed; right: 0.5vw; top: 50%; z-index: -1; width: 70px; height: 240px; transform: translateY(-50%); opacity: 0; transition: 0.3s;}
+#fixed_menu.active{z-index: 999; opacity: 1;}
 #fixed_menu ul{display: flex; flex-direction: column; justify-content: space-between; height: 100%;}
 #fixed_menu ul li{position: relative;}
 #fixed_menu ul li .inner{float: right; display: flex; flex-direction: column; justify-content: center; align-items: center; width: 70px; height: 70px;}
