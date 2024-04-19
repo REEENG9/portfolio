@@ -26,8 +26,8 @@
 #slide_banner .text-box a:hover .more{opacity: 0.7;}
 #slide_banner .text-box a:hover .arrow{left: -5px;}
 
-/* 배너 리스트 불릿 */
-#slide_banner .swiper-pagination{position: absolute; top: 40%; right: 30px;}
+/* 배너 리스트 bullet */
+#slide_banner .swiper-pagination.pagination-circle{position: absolute; top: 40%; right: 30px;}
 #slide_banner .swiper-pagination-bullet{display: block; width: 10px; height: 10px; margin: 10px 0; background: rgba(255,255,255,0.5); opacity:1; transition: 0.3s;}
 #slide_banner .swiper-pagination-bullet-active{background: #fff;}
 
@@ -38,6 +38,11 @@
 #slide_banner .btn button.swiper-button-next{background: url("../img/banner_right.png") center center no-repeat; background-size: 20px 30px;} 
 #slide_banner .btn span{position: absolute; right: 50px; top: 17px; font-size: 20px; font-weight: 600; color: rgba(230,230,230,1);}
 #slide_banner .swiper-slide .num{position: absolute; left: 120px; bottom: 48px; font-size: 20px; font-weight: 600; color: #000;}
+
+/* 배너 리스트 fraction */
+#slide_banner .swiper-pagination.pagination-num{position: absolute; left: 35px; top: 15px; width:	80px; font-family: "Lexend Deca"; font-size: 23px; color: rgba(255,255,255,0.8);}
+#slide_banner .swiper-pagination.pagination-num .swiper-pagination-current{left: 10px; top: 0; font: inherit; color: #fff;}
+#slide_banner .swiper-pagination.pagination-num .swiper-pagination-total{right: 12px; top: 0; font: inherit;} 
 
 
 /* 메인 영역 */

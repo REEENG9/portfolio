@@ -8,7 +8,7 @@ document.addEventListener("scroll", () => {
 // 고정 메뉴 스크롤 이벤트
 const fixed_menu = document.querySelector("#fixed_menu");
 
-function getScrollPer() { // 현재 스크롤 위치 퍼센트 값
+function getScrollPer() { // 현재 스크롤 위치 퍼센트 값 구하기
 	// (현재 스크롤 된 값 + 현재 보여지는 viewport 높이) / 현재 문서의 전체 높이 * 100
 	return (window.scrollY + window.innerHeight) / document.body.clientHeight * 100;
 }
@@ -41,7 +41,7 @@ var swiper1 = new Swiper('#slide_banner .swiper-container', {
 	slidesPerView: 1,
 	loop: true,
 	pagination: {
-		el: '#slide_banner .swiper-pagination',
+		el: '#slide_banner .pagination-circle',
 		clickable: true,
 	},
 	navigation: {
@@ -51,6 +51,16 @@ var swiper1 = new Swiper('#slide_banner .swiper-container', {
 	effect: 'fade',
 	speed: 1000
 });
+// 메인 슬라이드 fraction 스와이퍼 연동
+var swiper_slide_num = new Swiper('#slide_banner .swiper-container', {
+	loop: true,
+	effect: "fade",
+	pagination: {
+		el: '#slide_banner .pagination-num',
+		type: "fraction"
+	},
+})
+swiper1.controller.control = swiper_slide_num;
 
 
 // 섹션 tab4 스와이퍼
