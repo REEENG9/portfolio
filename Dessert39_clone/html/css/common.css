@@ -17,6 +17,7 @@ p {word-break: keep-all;}
 .white{text-shadow: 0 0 5px #333; color: #fff;}
 .eng{font-family: "Lexend Deca", san-serif;}
 .clearfix::after {content: ''; display: block; clear: both;}
+.hidden{display: none;}
 
 @keyframes blink {
 	0%{opacity: 1;}
@@ -27,6 +28,11 @@ p {word-break: keep-all;}
 	0%{transform: rotate(0) translate(0);}
 	50%{transform: rotate(-5deg) translateX(-3px); transform-origin: center bottom;}
 	100%{transform: rotate(0);}
+}
+
+@keyframes horizon_move {
+	0%{right: -15px;}
+	100%{right: 0px;}
 }
 	
 
@@ -103,31 +109,36 @@ a.more_btn .more_text{position: relative; z-index: 1;}
 a.more_btn:hover .more_text {color: #fff;} 
 a.more_btn:hover .btn_bubble_inner .btn_bubble_itembox .btn_bubble_item{transform: translate3d(0,0,0) scale(1.4);}
 
-/* 푸터 영역 */
+/* --------------------- 푸터 ----------------------- */
 #footer{background: #f4f5f6;}
-#footer .inner{width: 1300px; margin: 0 auto; background: pink;}
-#footer h2{}
-#footer h2 a{}
-#footer h2 a img{}
-#footer address{}
+#footer .inner{width: 1300px; margin: 0 auto; padding: 40px 0;}
+#footer h2{float: left; width: 150px;}
+#footer h2 a{display: flex;}
+#footer h2 a img{width: 100%;}
+#footer address{float: left; margin-left: 70px;}
 #footer address ul{}
-#footer address ul li{}
-#footer address ul li h4{}
-#footer address ul li p{}
-#footer address ul li a{}
-#footer .contact{}
-#footer .contact .top{}
-#footer .contact .top a{}
-#footer .contact .top a span{}
-#footer .contact .top a span i{}
-#footer .contact .top h3{}
-#footer .contact .top ul{}
-#footer .contact .top ul li{}
+#footer address ul li{display: flex; margin-bottom: 15px;}
+#footer address ul li h4{position: relative; margin-right: 10px;}
+#footer address ul li h4::after{content: ''; position: absolute; right: -10px; top: 6px; width: 1px; height: 50%; border-right: 1px solid #7b7b7b;}
+#footer address ul li p{margin-left: 10px;}
+#footer address ul li a{margin-left: 10px;}
+#footer .contact{float: right; text-align: right;}
+#footer .contact .top{margin-bottom: 25px;}
+#footer .contact .top>a{display: flex; justify-content: space-between; align-items: center; width: 210px; margin-left: auto; margin-bottom: 15px; padding: 10px 30px; border-radius: 30px; background: #1b1b1b;}
+#footer .contact .top>a span{color: #fff;}
+#footer .contact .top>a i{position: relative; right: 0; display: block; width: 12px; height: 12px; background: url("../img/right_arrow_footer.png") center center no-repeat; background-size: cover; animation: horizon_move 1s infinite;}
+#footer .contact .top h3{padding-bottom: 10px; font-size: 28px; letter-spacing: -1px;}
+#footer .contact .top ul{display: flex; justify-content: flex-end; align-items: center;}
+#footer .contact .top ul li{display: flex; justify-content: center; align-items: center; width: 30px; height: 26px;}
 #footer .contact .top ul li a {}
-#footer .contact .top ul li a img{}
+#footer .contact .top ul li:nth-of-type(1) a img{width: 18px; height: 18px;}
+#footer .contact .top ul li:nth-of-type(2) a img{width: 18px; height: 18px;}
+#footer .contact .top ul li:nth-of-type(3) a img{width: 30px; height: 20px;}
+#footer .contact .top ul li:nth-of-type(4) a img{width: 30px; height: 26px;}
+#footer .contact .top ul li:nth-of-type(5) a img{width: 22px; height: 22px;}
 #footer .contact .bottom{}
-#footer .contact .bottom h3{}
-#footer .contact .bottom a{}
-#footer .contact .bottom a i{}
-#footer .contact .bottom a i span{}
-#footer p{text-align: center; padding: 22px 2.5%; border-top: 1px solid #c2c2c3; font-size: 15px;}
+#footer .contact .bottom h3{padding-bottom: 10px; font-size: 28px; letter-spacing: -1px;}
+#footer .contact .bottom a{display: flex; align-items: center;}
+#footer .contact .bottom a i{display: block; width: 24px; height: 16px; background: url("../img/contact_icon.svg") center center no-repeat; background-size: 24px 16px; margin: 3px 3px 0 0;}
+#footer .contact .bottom a span{}
+#footer p.copy{text-align: center; padding: 22px 2.5%; border-top: 1px solid #c2c2c3; font-size: 15px;}
