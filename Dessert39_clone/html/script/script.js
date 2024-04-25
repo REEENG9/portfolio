@@ -20,7 +20,7 @@ document.addEventListener("scroll", () => {
 
 // 고정 메뉴 top 버튼
 $("#fixed_menu ul li button").click(function() {
-	$('html, body').animate({scrollTop:0}, 300);
+	$('html:not(:animated)').animate({scrollTop:0}, 300);
 })
 
 // #eco 탭 메뉴 클릭 이벤트
