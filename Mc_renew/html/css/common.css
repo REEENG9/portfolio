@@ -34,6 +34,9 @@ p {word-break: keep-all;}
 .scroll_on.type_top {transform: translate(0, -50px);}
 .scroll_on.type_bottom {transform: translate(0, 50px);}
 
+/* more 버튼 공통 css */
+.more_btn:hover{opacity: 0.5; transition: 0.2s;}
+
 /* -------------------- 헤더 영역 -------------------- */
 #header{}
 #header .header_wrap{width: 1250px; margin: 0 auto;}

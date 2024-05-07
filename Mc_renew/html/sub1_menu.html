@@ -7,6 +7,9 @@
 	<link rel="stylesheet" type="text/css" href="css/common.css">
 	<link rel="stylesheet" type="text/css" href="css/sub1_menu.css">
 	
+	<!-- javascript 연동식 -->
+	<script src="script/script.js" defer></script>
+	
 	<!-- 스와이퍼 연동식 -->
 	<link rel="stylesheet" href="css/swiper.min.css">
 	<script src="script/jquery-3.3.1.min.js"></script>
@@ -183,8 +186,8 @@
 					</div> <!-- menu_slide 끝 -->
 
 					<div class="arrow_btn"> <!-- 리스트 버튼 -->
-						<button class="left_arrow"><img src="img/menu_button_left.png" alt="left_arrow"></button>
-						<button class="right_arrow"><img src="img/menu_button_right.png" alt="right_arrow"></button>
+						<button onClick="menuMove(-1, 4, -295)" class="left_arrow dis"><img src="img/menu_button_left.png" alt="left_arrow"></button>
+						<button onClick="menuMove(1, 4, -295)" class="right_arrow"><img src="img/menu_button_right.png" alt="right_arrow"></button>
 					</div>
 
 					<button class="more_btn">MORE</button>
