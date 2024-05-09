@@ -4,11 +4,11 @@
 #slide_banner{position: relative; top: 100px; width: 1300px; height: 750px; margin: 0 auto; background: #ccc;}
 #slide_banner .swiper-container{height: 100%;}
 #slide_banner .swiper-container .swiper-wrapper{}
-#slide_banner .swiper-container .swiper-wrapper .swiper-slide.slide1{background: url("https://dessert39.com:443/data/banner/main128") 60% center no-repeat;}
-#slide_banner .swiper-container .swiper-wrapper .swiper-slide.slide2{background: url("https://dessert39.com:443/data/banner/122") center center no-repeat;}
-#slide_banner .swiper-container .swiper-wrapper .swiper-slide.slide3{background: url("https://dessert39.com:443/data/banner/118") 60% center no-repeat;}
-#slide_banner .swiper-container .swiper-wrapper .swiper-slide.slide4{background: url("https://dessert39.com:443/data/banner/109") 65% center no-repeat;}
-#slide_banner .swiper-container .swiper-wrapper .swiper-slide.slide5{background: url("https://dessert39.com:443/data/banner/100") center center no-repeat;}
+#slide_banner .swiper-container .swiper-wrapper .swiper-slide.slide1{background: url("../img/main128.gif") 60% center no-repeat;}
+#slide_banner .swiper-container .swiper-wrapper .swiper-slide.slide2{background: url("../img/main122.png") center center no-repeat;}
+#slide_banner .swiper-container .swiper-wrapper .swiper-slide.slide3{background: url("../img/main118.png") 60% center no-repeat;}
+#slide_banner .swiper-container .swiper-wrapper .swiper-slide.slide4{background: url("../img/main109.png") 65% center no-repeat;}
+#slide_banner .swiper-container .swiper-wrapper .swiper-slide.slide5{background: url("../img/main100.png") center center no-repeat;}
 
 /* 배너 텍스트 */
 #slide_banner .text-box{position: absolute; left: 70px; top: 150px; width: 350px; word-break: keep-all;}

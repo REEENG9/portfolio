@@ -1,24 +1,40 @@
 // 메인슬라이드 스와이퍼
 var swiper1 = new Swiper('#slide_banner .swiper-container', {
 	autoplay: {
-		delay: 5000,	// 자동으로 화면 전환 5초
-		disableOnInteraction: false	// 손님이 넘길 때는 오토플레이 정지
+		delay: 5000,
+		disableOnInteraction: false
 	},
-	slidesPerView: 1,	// 화면에 보여주는 이미지 개수
-	loop: true,	// 무한 루프 적용
-	pagination: {	// 하단에 점 표시 적용
+	slidesPerView: 1,
+	loop: true,
+	pagination: {
 		el: '#slide_banner .swiper-pagination',
 		clickable: true,
 	},
-	navigation: {	// 좌우 화살표 적용
+	navigation: {
 		nextEl: '#slide_banner .swiper-button-next',
 		prevEl: '#slide_banner .swiper-button-prev',
 	},
-	effect: 'slide', // slide, fade, cube, coverflow, flip
+	effect: 'slide',
 	speed: 1000
 });
 
-// event, best 영역 슬라이드 ---------------------------------------
+// youtube 영역 스와이퍼 ------------------------------------------------
+var swiper2 = new Swiper('.youtube .swiper-container', {
+	slidesPerView: 1,
+	loop: true,
+	pagination: {
+		el: '.youtube .swiper-pagination',
+		clickable: true,
+	},
+	navigation: {
+		nextEl: '.youtube .swiper-button-next',
+		prevEl: '.youtube .swiper-button-prev',
+	},
+	effect: 'slide',
+	speed: 500
+});
+
+// event, best, menu 영역 슬라이드 ---------------------------------------
 var idx = 0; // 현재 위치
 var click_S = true; // 클릭 연사 방지
 
@@ -52,13 +68,13 @@ function arrow(e, num, distance, slideSeletor) {
 	
 	idx += e; // 왼쪽 화살표, 오른쪽 화살표에 따라 idx 증감
 	
+	// 첫 번째 리스트에 도달하면 왼쪽 화살표 클릭 방지
 	if(idx <= 0) {
-		// 첫 번째 리스트에 도달하면 왼쪽 화살표 클릭 방지
 		idx = 0;
 		slideSeletor.parent('div').siblings('.arrow_btn').children('.left_arrow').addClass('dis');
 	}
+	// 마지막 리스트에 도달하면 오른쪽 화살표 클릭 방지 (이때 마지막에 도달하는 기준은 해당 슬라이드의 마지막 요소가 맨 오른쪽에 보일 때 이므로 보여지는 영역 만큼 차감)
 	else if(idx >= len - num) {
-		// 마지막 리스트에 도달하면 오른쪽 화살표 클릭 방지 (이때 마지막에 도달하는 기준은 해당 슬라이드의 마지막 요소가 맨 오른쪽에 보일 때 이므로 보여지는 영역 만큼 차감)
 		idx = len - num;
 		slideSeletor.parent('div').siblings('.arrow_btn').children('.right_arrow').addClass('dis');
 	}
@@ -68,19 +84,3 @@ function arrow(e, num, distance, slideSeletor) {
 	
 	$(slideSeletor).css('left', `${distance * idx}px`);
 }
-		
-// youtube 영역 스와이퍼 ------------------------------------------------
-var swiper2 = new Swiper('.youtube .swiper-container', {
-	slidesPerView: 1,	// 화면에 보여주는 이미지 개수
-	loop: true,	// 무한 루프 적용
-	pagination: {	// 하단에 점 표시 적용
-		el: '.youtube .swiper-pagination',
-		clickable: true,
-	},
-	navigation: {	// 좌우 화살표 적용
-		nextEl: '.youtube .swiper-button-next',
-		prevEl: '.youtube .swiper-button-prev',
-	},
-	effect: 'slide', // slide, fade, cube, coverflow, flip
-	speed: 500
-});
